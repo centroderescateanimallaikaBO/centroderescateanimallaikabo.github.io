@@ -1,0 +1,895 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+header {
+    background-color: #002348;
+}
+
+header nav a.nav-link {
+    background-color: #fff;
+    color: #002348 !important;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    width: 120px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 6px;
+    margin: 0 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo para el enlace activo ("Inicio") */
+header nav a.nav-link.active {
+    background-color: #F4681B !important; 
+    color: #fff !important; 
+}
+
+/* Hover para todos los enlaces */
+header nav a.nav-link:hover {
+    background-color: #B75018; 
+    color: #fff !important; 
+}
+
+
+
+/* Hero de home */
+.hero-section {
+    background-color: #003366; 
+    background-image: url('../assets/hero-1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 768px;
+    width: 100%;
+    color: #fff;
+    padding: 100px 0;
+    margin-bottom: 80px !important;
+}
+
+.hero-section .container {
+    margin-top: 50px;
+}
+
+.hero-section .container h1{
+    font-weight: 650;
+    margin-bottom: 20px;
+}
+
+.hero-section .container p {
+    font-weight: 400;
+    text-align: center;
+}
+
+
+button.btn-warning {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #F4681B;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 9px 35px;
+}
+
+.btn-warning:hover {
+    background-color: #B75018 !important; /* Naranja más oscuro al pasar el mouse */
+    color: #fff !important; /* Texto blanco al pasar el mouse */
+}
+
+
+/* Hero de nosotros */
+.medical-attention-section {
+    background-image: url('/assets/hero-2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    height: 768px;
+}
+
+.medical-attention-section .container {
+    margin-top: 18%;
+}
+
+.medical-attention-section .container h1 {
+    margin-left: -25%;
+    font-weight: 650;
+    margin-bottom: 20px;
+}
+
+.medical-attention-section .container p { 
+    margin-left: -30% !important;
+    margin-bottom: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.medical-attention-section button.btn-warning {
+    margin-left: -25% !important;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #F4681B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 9px 35px;
+}
+
+.btn-warning:hover {
+    background-color: #B75018 !important; /* Naranja más oscuro al pasar el mouse */
+    color: #fff !important; /* Texto blanco al pasar el mouse */
+}
+
+
+/* Hero de Adopción */
+.adoption-hero {
+    background-image: url('/assets/hero-3.jpg'); /* Ajusta la imagen según tu archivo */
+    background-size: cover;
+    height: 768px;
+    background-position: center;
+    padding: 60px 0;
+    color: #fff;
+}
+.adoption-hero h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: 17%;
+    margin-left: -27% !important;
+
+}
+.adoption-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+    margin-left: -30% !important;
+}
+.adoption-hero button {
+    font-weight: 500;
+    font-size: 18px !important;
+    margin-left: -25% !important;
+}
+
+
+
+/* Oculta todas las diapositivas excepto la activa */
+.hero-slide {
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+.hero-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+
+
+/* Estilo del contenedor del formulario */
+
+
+input,
+textarea,
+select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transición suave */
+    transition: none !important; /* Elimina transiciones */
+    outline: none !important; /* Quita el borde al enfocar */
+    border: 2px solid #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none !important; /* Quita el borde al enfocar */
+    border: 2px solid #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+
+}
+
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+.volunteer-form .mb-3 {
+    color: #003F7D !important;
+}
+
+.volunteer-form form {
+    background-color: #003F7D; /* Fondo azul */
+    padding:  35px 70px;
+    margin-bottom: 60px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle un efecto de profundidad */
+}
+
+
+
+/* Estilo de los campos del formulario */
+.volunteer-form .form-control {
+    border: none; /* Quita el borde para que se vea más limpio */
+    border-radius: 4px;
+    height: 50px; /* Ajusta la altura para que sea uniforme */
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Estilo del botón de enviar */
+.volunteer-form .btn-warning {
+    background-color: #F4681B; 
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 25% !important;
+    margin-left: -75%;
+    margin-top: -0px;
+}
+
+.volunteer-form .btn-warning:hover {
+    background-color: #B75018; /* Naranja más oscuro al pasar el mouse */
+}
+
+/* Ajuste para el título del formulario */
+.volunteer-form h3 {
+    margin-top: -10px;
+    color: #003366;
+    margin-bottom: 70px;
+    font-size: 32px;
+}
+
+.volunteer-form h3 span{
+    color: #F4681B;
+    margin-bottom: 20px;
+}
+
+.volunteer-form input.form-control::placeholder, .volunteer-form textarea.form-control::placeholder {
+    color: #003F7D !important;
+  }
+  
+
+
+/* Ubicación */
+.location-section {
+    background-image: url('/assets/background-adoption.png');
+    background-size: cover;
+    
+    padding: 60px 0;
+    height: 700px;
+    
+   
+}
+
+.location-section iframe {
+    border-radius: 12px !important;
+    filter:grayscale(15%);
+}
+
+.location-section h3 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.location-section h3 span {
+    font-size: 32px;
+    color: #F4681B !important; 
+}
+
+.location-section .container {
+    margin-top: 10%;
+}
+
+.motivation-section {
+    margin-bottom: -6% ;
+}
+
+
+.motivation-section .message-box {
+    background-color: #003F7D;
+    color: #fff;
+    border-radius:22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px !important;
+    font-size: 1.2rem;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+
+.large-box {
+    height: 250px !important;
+    max-width: 300px;
+    border-radius: 22px;
+    margin-top: -30px !important;
+}
+
+.motivation-section .message-box{
+    display: flex !important;
+    justify-content: center;
+    align-items: center !important;
+    text-align: center;
+}
+
+
+.motivation-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+
+.footer {
+    background-image: url('/assets/background-3.png');
+    background-repeat: no-repeat;
+    color: #ffffff;
+    margin-top: -3% !important;
+}
+
+.footer .container {
+margin-top: 4%;
+}
+
+.footer .container .list-unstyled {
+margin-right: 40px;
+}
+
+.footer ul {
+margin-left: 70px !important;
+text-align: left;
+}
+
+
+.footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-link:hover {
+    text-decoration: none;
+    color: #F4681B;
+}
+
+.footer p, .footer a {
+    font-size: 0.9rem;
+}
+
+.footer .col-md-4 a:hover {
+    filter: brightness(0) saturate(100%) invert(38%) sepia(87%) saturate(1347%) hue-rotate(345deg) brightness(95%) contrast(97%);
+    transition: filter 0.3s ease; /* Transición suave para el efecto de hover */
+}
+
+.footer .col-md-4 img:hover {
+    filter: brightness(0) saturate(100%) invert(38%) sepia(87%) saturate(1347%) hue-rotate(345deg) brightness(95%) contrast(97%);
+    transition: filter 0.3s ease; /* Transición suave para el efecto de hover */
+}
+
+
+.copyright .mt-3 {
+    justify-content: center !important;
+    color: #002348 !important;
+    font-weight: bold;
+    font-size: 12px !important;
+    margin-top: 9px !important;
+    margin: 0px;
+    text-align: center;
+    padding-bottom: 10px;
+ }
+
+.social-icons a {
+    color: #002348;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+
+  
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: filter 0.1s ease;
+}
+
+.social-icons a:hover img {
+    filter: brightness(0) saturate(100%) invert(38%) sepia(87%) saturate(1347%) hue-rotate(345deg) brightness(95%) contrast(97%);
+}
+
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.custom-line {
+    background-color: #ffffff; /* Asegura que sea blanco puro */
+    height: 1px; /* Ajusta el grosor */
+    width: 90%; /* Ajusta el ancho */
+    margin: 0 auto; /* Centra horizontalmente */
+    margin-top: 40px; /* Espaciado superior */
+    margin-bottom: 30px; /* Espaciado inferior */
+    border-radius: 2px; /* Redondea un poco los bordes, opcional */
+}
+
+
+
+@media (max-width: 769px) {
+
+
+    .hero-section {
+        background-size: cover; /* Cambiar a cover para que ocupe todo el contenedor proporcionalmente */
+        background-position: center;
+        height: 408px !important;
+        max-height: 500px !important;
+        width: 100%; /* Ajusta al ancho del contenedor */
+        margin: 0 auto; /* Centra el contenido horizontalmente */
+        color: #fff;
+        padding: 20px 0; /* Espaciado interno para mantener consistencia */
+        margin-bottom: 80px !important;
+        overflow: hidden; /* Oculta cualquier contenido que desborde */
+    }
+    
+
+    .medical-attention-section .container h1 {
+        margin-left: -190px !important;
+        font-size: 23px !important;
+    }
+
+    .medical-attention-section .container {
+        margin-top: 200px !important;
+
+    }
+
+    .medical-attention-section .container p {
+        margin-left: -240px !important;
+        font-size: 16px !important;
+    }
+
+    .medical-attention-section button.btn-warning {
+        margin-left: -27% !important;
+  
+    }
+
+    .hero-section .container h1 {
+        margin-top: -80px !important;
+        font-size: 23px !important;
+    }
+
+    .hero-section .container p {
+        font-size: 16px !important;
+        margin-bottom: 10px;
+    }
+
+
+    .adoption-hero .container h2 {
+        margin-top: 89px !important;
+        font-size: 23px !important; 
+        margin-left: -200px !important;
+    }
+
+    .adoption-hero .container p {
+        margin-left: -240px !important;
+    }
+
+    .adoption-hero button {
+        margin-left: -27% !important;
+        padding: 9px 35px;
+    }
+
+
+    .motivation-section {
+        flex-direction: row;
+        gap: 20px; /* Espacio entre los cuadros */
+    }
+
+    .motivation-section .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .motivation-section .row {
+        display: flex;
+        justify-content: center;
+        flex-direction: row; /* Asegura que estén uno al lado del otro */
+        gap: 20px; /* Espacio entre los cuadros */
+    }
+
+    .motivation-section .col-md-2 {
+        flex: 1 1 auto;
+        max-width: 200px; /* Limita el ancho de cada cuadro */
+    }
+
+    .motivation-section .message-box {
+        width: 100%; /* Permite que cada cuadro ocupe el ancho total de su contenedor */
+    }
+
+    .motivation-section .message-box {
+        background-color: #003F7D;
+        color: #fff;
+        border-radius: 22px;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px !important;
+        font-size: 1.2rem;
+        min-height: 195px;
+        display: flex;
+        align-items: center;
+    }
+
+    .large-box {
+        height: 245px;
+        max-width: 300px;
+        border-radius: 22px;
+        margin-top: -30px;
+    }
+
+    
+    .footer {
+        background-image: url('/assets/background-blue768.png') !important;
+        background-repeat: no-repeat;
+        background-size: cover; /* Cambia 'contain' a 'cover' */
+        background-position: center; /* Centra la imagen */
+        padding-top: 20px; /* Añade un poco de padding para dar espacio */
+        padding-bottom: 30px; /* Ajusta según necesites más o menos espacio */
+        margin-top: -10% !important;
+        margin-bottom: 0; /* Elimina el margen inferior si no es necesario */
+    }
+
+    .footer ul {
+        margin-left: 40px !important;
+        text-align: left;
+    }
+
+    .footer .container .col-md-4 {
+        margin-left: -20px;
+    }
+}
+
+
+ 
+    /* Estilos de pantalla para 360px */
+@media (max-width: 480px) {
+
+    /* Estilos generales para las cajas de mensajes */
+    .motivation-section .message-box {
+        display: none !important; /* Oculta todas las cajas inicialmente */
+    }
+    
+    /* Muestra solo la caja de mensaje activa */
+    .motivation-section .message-box.active {
+        display: block !important;
+    }
+      
+
+  
+    body, html {
+        max-width: 390px; /* Limita el ancho máximo a 360px */
+        overflow-x: hidden; /* Evita el desbordamiento horizontal */
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    
+    /* Hero de Home */
+    .hero-section {
+        background-image: url('/assets/h1.jpg') !important;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        width: 100%;
+        padding: 0%;
+    }
+  
+    .hero-section .container {
+        margin-top: 70px; /* Ajuste del margen superior */
+    }
+  
+    .hero-section .container h1 {
+        font-size: 23px !important; /* Ajusta el tamaño del título */
+        margin-top: -20px !important;
+        font-weight: bold;
+        width: 50% !important;
+        margin-left: 80px !important;
+    }
+  
+    .hero-section .container p {
+        font-size: 16px; /* Tamaño de fuente ajustado */
+        font-weight: 400;
+        text-align: center;
+        padding: 0 15px; /* Aumenta el padding lateral */
+    }
+
+  
+
+    .hero-section .btn  {
+        font-size: 16px !important;
+        padding: 6px 14px !important;
+        margin-left: -20px !important;
+  
+    }
+
+    .medical-attention-section .btn  {
+        font-size: 16px !important;
+        padding: 6px 14px !important;
+        margin-right: -70px !important;
+  
+    }
+
+ 
+
+
+    /* Hero de Nosotros */
+    .medical-attention-section {
+        background-image: url('/assets/h2.jpg') !important;
+        background-size: contain;
+        background-position: center;
+        height: 400px;
+        padding: 60px 0;
+    }
+  
+    .medical-attention-section .container {
+        margin-top: 10%; /* Ajuste de margen superior */
+        text-align: center; /* Centra el texto */
+    }
+  
+    .medical-attention-section .container h1 {
+        font-size: 23px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        margin-left:10px; /* Quita el margen izquierdo */
+    }
+  
+    .medical-attention-section .container p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 0; /* Quita el margen izquierdo */
+        padding: 0 15px; /* Agrega padding lateral */
+    }
+  
+    .medical-attention-section button.btn-warning {
+        font-size: 16px !important;
+        padding: 6px 14px !important;
+        margin-left: -80px !important;
+        margin-top: 20px !important;
+
+    }
+  
+    /* Hero de Adopción */
+    .adoption-hero {
+        background-image: url('/assets/h3.jpg') !important;
+        background-size: contain;
+        height: 400px;
+        background-position: center;
+        padding: 60px 0;
+    }
+  
+    .adoption-hero .container h2 {
+        font-size: 23px !important;
+        margin-top: 10% !important;
+        margin-left: 85px !important;
+        font-weight: bold;
+        width: 60% !important;
+    }
+
+
+    .adoption-hero h2 {
+        font-size: 23px; /* Tamaño de fuente ajustado */
+        font-weight: 600;
+        margin-bottom: 15px;
+        margin-left: 0; /* Quita el margen izquierdo */
+        text-align: center;
+        margin-top: 50px !important;
+    }
+
+    .adoption-hero p {
+        font-size: 1rem; /* Tamaño de fuente ajustado */
+        margin-bottom: 15px;
+        margin-left: 0; /* Quita el margen izquierdo */
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .hero-section .btn  {
+        font-size: 16px !important;
+        padding: 6px 14px !important;
+        margin-left: 0px !important;
+  
+    }
+
+
+    .adoption-hero .btn {
+        font-size: 16px !important;
+        padding: 6px 14px !important;
+        margin-left: 25px !important;
+        margin-top: 25px !important;
+    }
+
+
+    .volunteer-form h3 {
+      width: 70%;
+      margin-left: 40px;
+      margin-top: -50px;
+    }
+  
+    .volunteer-form h3, .volunteer-form h3 span {
+      font-size: 23px;
+    }
+  
+    .volunteer-form form {
+      padding: 50px 15px !important;
+    }
+  
+    .volunteer-form form textarea.form-control {
+      height: 250px; /* Altura específica para el campo de texto */
+      resize: none; /* Evita que el usuario redimensione el campo */
+    }
+  
+    .volunteer-form .btn-warning {
+      background-color: #F4681B;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 4px;
+      height: 50px;
+      width: 60% !important;
+      margin-left: 0%;
+      margin-top: 25px;
+    }
+
+    .location-section {
+        background-image: url(/assets/background-blue360.png);
+        padding: 60px 0;
+        height: 700px;
+        width: 100%;
+    }
+  
+  
+    .location-section iframe {
+        width: 100%;
+    }
+  
+    .location-section h3 {
+        margin-top: 100px;
+    }
+
+
+
+
+
+    .motivation-section .message-box {
+        background-color: #003F7D;
+        color: #fff;
+        border-radius:22px;
+        font-weight: bold;
+        text-align: center;
+        padding: 30px !important;
+        font-size: 1.2rem;
+        min-height: 300px !important;
+        padding-top: 49% !important;
+        display: flex;
+        align-items: center;
+        margin-top: -95px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .footer {
+        background-image: url(/assets/background360.png) !important;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        background-position: left;
+        margin-top: -20% !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+        flex-direction: column;
+    }
+    
+
+    .footer .container, .footer ul {
+        text-align: center;
+        margin-top: 60px;   
+        margin-left: 50px;
+    }
+
+    .footer .container .list-unstyled {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+        margin-left: -50px !important;
+
+    }
+    
+    .footer p, .footer a {
+        font-size: 12px;
+        padding: 5px;
+        color: #fff !important;
+    }
+
+    .footer .social-icons a {
+        font-size: 12px;
+    }
+
+    .footer .container .row .col-md-4 {
+        margin-left: 0px;
+    }
+
+    .footer .container .row .col-md-4 img.footer-logo {
+        margin-left: -90px !important;
+    }
+
+    .footer .mt-3 {
+        width: 80%;
+        padding: 20px !important;
+        margin-left: 0;
+        font-size: 12px;
+    }
+
+    .copyright .mt-3 {
+        font-weight: 600;
+    }
+    
+
+    .footer .social-icons a {
+        color: #002348 !important;
+    }
+
+    .footer .social-icons a img {
+        padding: 6px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .custom-line {
+        margin-left: 15px;
+    }
+
+}
+

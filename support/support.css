@@ -1,0 +1,1439 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Fondo del navbar */
+header {
+    background-color: #002348; 
+}
+
+/* Estilo base para los enlaces del navbar */
+header nav a.nav-link {
+    background-color: #fff; 
+    color: #000 !important; 
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    width: 120px;
+    height: 34px; 
+    line-height: 34px; 
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 0 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo para el enlace activo ("Inicio") */
+header nav a.nav-link.active {
+    background-color: #F4681B !important; 
+    color: #fff !important; 
+}
+
+/* Hover para todos los enlaces */
+header nav a.nav-link:hover {
+    background-color: #B75018; 
+    color: #fff !important; 
+}
+
+
+.container .icon-container img {
+    width: 70px;
+}
+
+.container .card-title img {
+    width: 100px;
+}
+
+.container .card {
+    width: 100%;
+    justify-content: center;
+    
+}
+/* Hero de home */
+.hero-section {
+    background-color: #003366; 
+    background-image: url('../assets/hero-1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 768px;
+    width: 100%;
+    color: #fff;
+    padding: 100px 0;
+    margin-bottom: 80px !important;
+  }
+  
+  .hero-section .container {
+    margin-top: 50px;
+  }
+  
+  .hero-section .container h1{
+    font-weight: 650;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section .container p {
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  
+  button.btn-warning {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #F4681B;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 9px 35px;
+  }
+  
+  .btn-warning:hover {
+    background-color: #B75018 !important; /* Naranja más oscuro al pasar el mouse */
+    color: #fff !important; /* Texto blanco al pasar el mouse */
+  }
+  
+  
+  /* Hero de nosotros */
+  .medical-attention-section {
+    background-image: url('/assets/hero-2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    height: 768px;
+  }
+  
+  .medical-attention-section .container {
+    margin-top: 18%;
+  }
+  
+  .medical-attention-section .container h1 {
+    margin-left: -25%;
+    font-weight: 650;
+    margin-bottom: 20px;
+  }
+  
+  .medical-attention-section .container p { 
+    margin-left: -30% !important;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .medical-attention-section button.btn-warning {
+    margin-left: -26% !important;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #F4681B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 9px 35px;
+  }
+  
+  .btn-warning:hover {
+    background-color: #B75018 !important; /* Naranja más oscuro al pasar el mouse */
+    color: #fff !important; /* Texto blanco al pasar el mouse */
+  }
+  
+
+/* Hero de Adopción */
+.adoption-hero {
+    background-image: url('/assets/hero-3.jpg'); /* Ajusta la imagen según tu archivo */
+    background-size: cover;
+    height: 768px;
+    background-position: center;
+    padding: 60px 0;
+    color: #fff;
+}
+.adoption-hero h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: 17%;
+    margin-left: -27% !important;
+
+}
+.adoption-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-left: -30% !important;
+}
+.adoption-hero button {
+    font-weight: 500;
+    font-size: 18px !important;
+    margin-left: -26% !important;
+}
+
+
+  
+  
+  /* Oculta todas las diapositivas excepto la activa */
+  .hero-slide {
+    display: none;
+    transition: opacity 0.5s ease;
+  }
+  
+  .hero-slide.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  
+/* Requisitos de Adopción */
+
+
+.adoption-requirements {
+    text-align: left;
+    margin-left: 15%;
+    margin-top: -4%;
+}
+
+.adoption-requirements h3 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #002348;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-left: -150px;
+    margin-bottom: 50px;
+ 
+}
+
+.adoption-requirements h3 span {
+    color: #F4681B !important;
+}
+
+.adoption-requirements ul {
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.adoption-requirements ul li {
+    font-size: 16px !important;
+    margin: 15px 0;
+    padding-left: 60px; /* Espacio para el icono */
+    position: relative;
+    line-height: 1.1;
+    font-weight: 300;
+    min-height: 50px ;
+    width: 83%;
+}
+
+.adoption-requirements ul li img.paw-icon {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    margin: 0 -20px;
+}
+
+.adoption-requirements ul li strong {
+    color: #003366; /* Color para el texto en negrita */
+    font-size: 23px;
+    
+}
+
+.adoption-requirements ul li span {
+    color: #555; /* Color para el texto de descripción */
+}
+
+
+
+/* Sección de Testimonios */
+.testimonials-section {
+    background-image: url('/assets/background-adoption.png');
+    color: #ffffff;
+    height: 850px;
+}
+
+.bullets-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 230px !important;
+}
+
+.testimonials-section h2 {
+    font-size: 32px;
+    color: #002348;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    font-weight: 600;
+
+}
+
+.testimonials-section h2 span{
+    color: #F4681B !important;
+}
+
+/* Contenedor de las tarjetas */
+.testimonials-section .row {
+    display: flex;
+    margin-top: 10% !important;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilos de las tarjetas */
+.testimonial-card {
+    background-color: transparent;
+    width: 300px;
+    height: 100%;
+    perspective: 1000px;
+    position: relative;
+    border: none;
+    margin-bottom: 20px;
+}
+
+/* Tarjeta ancha para Gustavo Vergara con mayor espacio superior */
+.wide-card {
+    flex: 1 1 100%;
+    max-width: 620px; /* Ancho combinado de dos tarjetas */
+    margin-top: 250px !important; /* Espacio superior más grande */
+}
+
+
+
+/* Efecto Flip */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.testimonial-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Caras frontal y trasera de la tarjeta */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    backface-visibility: hidden;
+    border-radius: 25px;
+}
+
+/* Frente de la tarjeta */
+.flip-card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.flip-card-front img {
+    width: 100%;
+
+}
+
+/* Specific style for the image in Gustavo Vergara's card */
+.wide-card .flip-card-front img {
+    width: 100%; /* Adjust width to make it smaller */
+    height: 220px;
+    margin: 0 auto; /* Center the image */
+    border-radius: 25px !important; /* Round the corners */
+}
+
+.wide-card .flip-card-back {
+    height: 220px;
+}
+
+
+
+.card {
+    border: none !important; 
+    border-radius: 12px !important;
+}
+
+
+
+
+/* Estilo para la barra del título */
+.card-title-wrapper h5 {
+    background-color: transparent;
+    font-size: 32px !important;
+    font-weight: 400 !important;
+    margin-top: -60px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Reverso de la tarjeta */
+.flip-card-back {
+    background-color: #ffffff;
+    color: #002348;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left !important;
+    padding: 22px 40px;
+    border-radius: 27px;
+}
+
+.flip-card-back p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.flip-card-back h5 {
+    font-size: 32px !important;
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.flip-card.wide-card .flip-card-back h5 {
+    border-radius: 18px;
+    height: 245px;
+    border-radius: 18px;
+    margin-top: 95px !important; 
+}
+
+
+  .flip-card-back .vector-blue-orange {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+  
+  .flip-card-back .wide-vector-blue-orange {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+
+
+/* Estilo del contenedor del formulario */
+.volunteer-form .container {
+    margin-top: 6%;
+}
+
+.volunteer-form form {
+    background-color: #003F7D; /* Fondo azul */
+    padding: 45px 80px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle un efecto de profundidad */
+}
+
+/* Estilo de los campos del formulario */
+.volunteer-form .form-control {
+    border: none; /* Quita el borde para que se vea más limpio */
+    border-radius: 4px;
+    height: 50px; /* Ajusta la altura para que sea uniforme */
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Estilo del botón de enviar */
+.volunteer-form .btn-warning {
+    background-color: #F4681B; 
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    height: 50px;
+    width: 30% !important;
+    margin-left: -70%;
+    margin-top: -1px;
+}
+
+.volunteer-form .btn-warning:hover {
+    background-color: #B75018; /* Naranja más oscuro al pasar el mouse */
+}
+
+/* Ajuste para el título del formulario */
+.volunteer-form h3 {
+    color: #003366;
+    margin-bottom: 40px;
+    margin-top: -10px;
+    font-size: 32px;
+}
+
+.volunteer-form h3 span {
+    color: #F4681B;
+    font-size: 32px;
+}
+
+.volunteer-form input.form-control::placeholder, .volunteer-form textarea.form-control::placeholder {
+    color: #003F7D !important;
+  }
+
+
+/* Estilos para la descripción de la sección de patrocinadores */
+.donation-section p.lead {
+    background-color: #003F7D; /* Fondo azul oscuro */
+    color: #ffffff !important; /* Texto blanco */
+    padding: 20px 80px !important; /* Ajuste de relleno */
+    border-radius: 15px; /* Bordes redondeados */
+    max-width: 900px; /* Ancho máximo de la caja de texto */
+    margin: 60px auto; /* Centrado horizontal */
+    margin-top: 120px;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    line-height: 1.5; /* Altura de línea para legibilidad */
+    text-align: left;
+}
+
+
+
+
+
+/* Donaciones Section */
+.donation-section {
+    background-image: url('/assets/background-gray.png');
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.donation-section h3 {
+    font-size: 32px !important;
+    font-weight: 500 !important;
+    color: #003366;
+}
+
+.donation-section h3 span {
+    color: #F4681B !important;
+    font-size: 32px !important;
+    font-weight: 500 !important;
+}
+
+.donation-section p {
+    color: #002348 !important;
+    font-size: 32px !important;
+    font-weight: 500 !important;
+    margin-left: 33%;
+}
+
+.donation-section p span {
+    color: #F4681B !important;
+    font-size: 32px !important;
+    font-weight: 500 !important;
+}
+
+
+
+
+.donation-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.donation-section ul li {
+    width: 200%;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 184px;
+    text-align: left;
+    color: #002348;
+
+}
+
+.donation-section ul li img{
+    width: 45px;
+    margin-top: -38px;
+    margin-right: 40px;
+    padding-top: 40px;
+}
+
+
+
+
+.donation-section img {
+    width: 250px;
+    margin-top: -10px;
+}
+
+
+
+button.btn-warning {
+    margin-left: 0%;
+    font-size: 18px;
+    background-color: #F4681B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 9px 35px;
+}
+
+.footer {
+    background-image: url('/assets/background-3.png');
+    background-repeat: no-repeat;
+    color: #ffffff;
+    margin-top: -3% !important;
+  }
+  
+  .footer .container {
+  margin-top: 4%;
+  }
+  
+  .footer .container .list-unstyled {
+  margin-right: 40px;
+  }
+  
+  .footer ul {
+  margin-left: 70px !important;
+  text-align: left;
+  }
+  
+  
+  .footer ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .footer-link:hover {
+    text-decoration: none;
+    color: #F4681B;
+  }
+  
+  .footer p, .footer a {
+    font-size: 0.9rem;
+  }
+
+  .footer .col-md-4 a:hover {
+    filter: brightness(0) saturate(100%) invert(38%) sepia(87%) saturate(1347%) hue-rotate(345deg) brightness(95%) contrast(97%);
+    transition: filter 0.3s ease; /* Transición suave para el efecto de hover */
+}
+
+    .footer .col-md-4 img:hover {
+        filter: brightness(0) saturate(100%) invert(38%) sepia(87%) saturate(1347%) hue-rotate(345deg) brightness(95%) contrast(97%);
+        transition: filter 0.3s ease; /* Transición suave para el efecto de hover */
+    }
+
+
+  .copyright .mt-3 {
+    justify-content: center !important;
+    color: #002348 !important;
+    font-weight: bold;
+    font-size: 12px !important;
+    margin-top: 9px !important;
+    margin: 0px;
+    text-align: center;
+    padding-bottom: 10px;
+ }
+  
+  .social-icons a {
+    color: #002348;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  
+  
+  .social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: filter 0.1s ease;
+  }
+  
+  .social-icons a:hover img {
+    filter: brightness(0) saturate(100%) invert(38%) sepia(87%) saturate(1347%) hue-rotate(345deg) brightness(95%) contrast(97%);
+  }
+  
+  
+  .footer .social-icons {
+    margin-top: 10px;
+  }
+  
+  .custom-line {
+    background-color: #ffffff; /* Asegura que sea blanco puro */
+    height: 1px; /* Ajusta el grosor */
+    width: 90%; /* Ajusta el ancho */
+    margin: 0 auto; /* Centra horizontalmente */
+    margin-top: 40px; /* Espaciado superior */
+    margin-bottom: 30px; /* Espaciado inferior */
+    border-radius: 2px; /* Redondea un poco los bordes, opcional */
+}
+  
+/* Ajustes responsivos */
+@media (max-width: 769px) {
+
+    body, html {
+        max-width: 768px; /* Limita el ancho máximo a 360px */
+        overflow-x: hidden; /* Evita el desbordamiento horizontal */
+        margin: 0;
+    }
+        
+
+
+    .hero-section {
+        background-size: cover; /* Cambiar a cover para que ocupe todo el contenedor proporcionalmente */
+        background-position: center;
+        height: 408px !important;
+        max-height: 500px !important;
+        width: 100%; /* Ajusta al ancho del contenedor */
+        margin: 0 auto; /* Centra el contenido horizontalmente */
+        color: #fff;
+        padding: 20px 0; /* Espaciado interno para mantener consistencia */
+        margin-bottom: 80px !important;
+        overflow: hidden; /* Oculta cualquier contenido que desborde */
+    }
+    
+
+    .medical-attention-section .container h1 {
+        margin-left: -190px !important;
+        font-size: 23px !important;
+    }
+
+    .medical-attention-section .container {
+        margin-top: 200px !important;
+
+    }
+
+    .medical-attention-section .container p {
+        margin-left: -240px !important;
+        font-size: 16px !important;
+    }
+
+    .medical-attention-section button.btn-warning {
+        margin-left: -27% !important;
+  
+    }
+
+    .hero-section .container h1 {
+        margin-top: -80px !important;
+        font-size: 23px !important;
+    }
+
+    .hero-section .container p {
+        font-size: 16px !important;
+        margin-bottom: 10px;
+    }
+
+
+    .adoption-hero .container h2 {
+        margin-top: 89px !important;
+        font-size: 23px !important; 
+        margin-left: -200px !important;
+    }
+
+    .adoption-hero .container p {
+        margin-left: -240px !important;
+    }
+
+    .adoption-hero button {
+        margin-left: -27% !important;
+        padding: 9px 35px;
+    }
+
+
+  
+    .adoption-requirements {
+      text-align: left;
+      margin-left: 60px;
+      width: 100%;
+      margin-top: -4%;
+    }
+    
+    .adoption-requirements h3 {
+      font-size: 23px;
+      font-weight: 600;
+      color: #002348;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-left: -170px;
+      margin-bottom: 50px;
+    
+    }
+
+
+    .testimonials-section {
+        background-image: url('/assets/background-adoption.png');
+        color: #ffffff;
+        padding: 20px 0;
+        background-size: cover;
+        background-position: center;
+        height: 830px;
+    }
+
+    .testimonials-section h2 span {
+        font-size: 23px !important;
+    }
+    
+
+    .testimonials-section h2 {
+        font-size: 23px !important;
+        margin-top: 130px;
+        margin-bottom: -20px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .testimonials-section .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    .testimonials-section .container .row .col-md-4 {
+        flex: 0 0 40% !important;
+        max-width: 90%; 
+        margin-bottom: 20px; 
+    }
+
+    .card-title-wrapper h5 {
+        font-size: 20px !important;
+        margin-top: -48px;
+        font-weight: 600 !important;
+    }
+
+    .testimonial-card, .wide-card {
+        width: 90%;
+        max-width: 620px; 
+        margin: 0 auto; 
+        height: 100px;
+    }
+
+ 
+    .flip-card-inner {
+        width: 110%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        width: 100%;
+        height: auto;
+        backface-visibility: hidden;
+        border-radius: 25px;
+    }
+
+    .testimonial-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .wide-card .flip-card-front img {
+        width: 100%;
+        height: 195px;
+        object-fit: cover;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .wide-card {
+        width: 79% !important;
+        max-width: 420px;
+        margin-left: 60px;
+        margin-top: 220px !important; 
+        margin-bottom: 40px !important;
+    }
+
+    .flip-card-back {
+        background-color: #ffffff;
+        color: #002348;
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 22px;
+        border-radius: 25px;
+        max-height: 225px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .flip-card-back p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .flip-card-back h5 {
+        font-size: 23px !important;
+        margin-bottom: -2px !important;
+    }
+
+
+
+
+    .bullets-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 240px !important;
+    }
+
+    .bullets-container img {
+
+        width: 35%;
+        height: auto;
+    }
+
+
+
+
+
+
+    .volunteer-form .container {
+        width: 80%;
+    }
+  
+    .volunteer-form form {
+        background-color: #003F7D;
+        padding: 25px 50px;
+        border-radius: 16px;
+        margin-bottom: 100px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Donaciones Section */
+    .donation-section {
+        background-image: url('/assets/background-gray768.png') !important;
+        background-size: cover;
+        background-position: center;
+        height: 900px;
+    }
+
+
+    .donation-section ul li {
+        width: 200%;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 5px 70px;
+        text-align: left;
+        color: #002348;
+    }
+
+    .donation-section ul li img {
+        margin-right: 13px;
+    }
+
+    .donation-section img {
+        width: 200px;
+        margin-top: 90px;
+        margin-left: 0px;
+    }
+
+    .donation-section .container .col-md-6 p {
+        width: 120%;
+        margin-left: 50px;
+    }
+
+    
+    .donation-section p.lead {
+        max-width: 550px;
+        padding: 10px 25px !important;
+        font-size: 16px !important;
+        border-radius: 25px;
+    }
+
+    
+    .footer {
+        background-image: url('/assets/background-blue768.png') !important;
+        background-repeat: no-repeat;
+        background-size: cover; /* Cambia 'contain' a 'cover' */
+        background-position: center; /* Centra la imagen */
+        padding-top: 20px; /* Añade un poco de padding para dar espacio */
+        padding-bottom: 30px; /* Ajusta según necesites más o menos espacio */
+        margin-top: -14% !important;
+        margin-bottom: 0; /* Elimina el margen inferior si no es necesario */
+    }
+
+    .footer ul {
+        margin-left: 40px !important;
+        text-align: left;
+    }
+
+    .footer .container .col-md-4 {
+        margin-left: -20px;
+    }
+
+}    
+
+
+/* Estilos de pantalla para 360px */
+@media (max-width: 391px) {
+
+    body, html {
+        max-width: 390px; /* Limita el ancho máximo a 360px */
+        overflow-x: hidden; /* Evita el desbordamiento horizontal */
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    
+    
+    /* Hero de Home */
+    .hero-section {
+        background-image: url('/assets/h1.jpg') !important;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        width: 100%;
+        padding: 0%;
+    }
+  
+    .hero-section .container {
+        margin-top: 70px; /* Ajuste del margen superior */
+    }
+  
+    .hero-section .container h1 {
+        font-size: 23px !important; /* Ajusta el tamaño del título */
+        margin-top: -20px !important;
+        font-weight: bold;
+        width: 50% !important;
+        margin-left: 80px !important;
+    }
+  
+    .hero-section .container p {
+        font-size: 16px; /* Tamaño de fuente ajustado */
+        font-weight: 400;
+        text-align: center;
+        padding: 0 15px; /* Aumenta el padding lateral */
+    }
+
+  
+
+    .hero-section .btn  {
+        font-size: 16px !important;
+        padding: 6px 14px !important;
+        margin-left: 0px !important;
+  
+    }
+
+    .medical-attention-section .btn  {
+        font-size: 16px !important;
+        padding: 6px 14px !important;
+        margin-right: -70px !important;
+  
+    }
+
+ 
+
+
+    /* Hero de Nosotros */
+    .medical-attention-section {
+        background-image: url('/assets/h2.jpg') !important;
+        background-size: contain;
+        background-position: center;
+        height: 400px;
+        padding: 60px 0;
+    }
+  
+    .medical-attention-section .container {
+        margin-top: 10%; /* Ajuste de margen superior */
+        text-align: center; /* Centra el texto */
+    }
+  
+    .medical-attention-section .container h1 {
+        font-size: 23px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        margin-left:10px; /* Quita el margen izquierdo */
+    }
+  
+    .medical-attention-section .container p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 0; /* Quita el margen izquierdo */
+        padding: 0 15px; /* Agrega padding lateral */
+    }
+  
+    .medical-attention-section button.btn-warning {
+        font-size: 16px !important;
+        padding: 6px 14px !important;
+        margin-left: -80px !important;
+        margin-top: 20px !important;
+
+    }
+  
+    /* Hero de Adopción */
+    .adoption-hero {
+        background-image: url('/assets/h3.jpg') !important;
+        background-size: contain;
+        height: 400px;
+        background-position: center;
+        padding: 60px 0;
+    }
+  
+    .adoption-hero .container h2 {
+        font-size: 23px !important;
+        margin-top: 10% !important;
+        margin-left: 85px !important;
+        font-weight: bold;
+        width: 60% !important;
+    }
+
+
+    .adoption-hero h2 {
+        font-size: 23px; /* Tamaño de fuente ajustado */
+        font-weight: 600;
+        margin-bottom: 15px;
+        margin-left: 0; /* Quita el margen izquierdo */
+        text-align: center;
+        margin-top: 50px !important;
+    }
+
+    .adoption-hero p {
+        font-size: 1rem; /* Tamaño de fuente ajustado */
+        margin-bottom: 15px;
+        margin-left: 0; /* Quita el margen izquierdo */
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .hero-section .btn  {
+        font-size: 16px !important;
+        padding: 6px 14px !important;
+        margin-left: 0px !important;
+  
+    }
+
+
+    .adoption-hero .btn {
+        font-size: 16px !important;
+        padding: 6px 14px !important;
+        margin-left: 40px !important;
+        margin-top: 25px !important;
+    }
+
+
+    .adoption-requirements {
+        text-align: left;
+        margin-left: 9px;
+        width: 97%;
+        margin-top: -15%;
+        margin-bottom: 30px;
+    }
+
+    .adoption-requirements h3 {
+        font-size: 23px;
+        width: 100%;
+        display: flex;
+        margin-left: -5px;
+        font-weight: bold;
+    }
+
+    .adoption-requirements ul li {
+        padding-left: 39px;
+    }
+    
+    .adoption-requirements h3 span {
+        font-size: 23px;
+        width: 50%;
+        margin-top: 30px;
+        margin-left: -170px;
+    }
+
+
+    .adoption-requirements ul li strong {
+        color: #003366;
+        font-size: 18px !important;
+    }
+    
+
+     /* Oculta la tarjeta "Gustavo Vergara" */
+     .wide-card {
+        display: none !important;
+    }
+
+    .testimonials-section {
+        background-image: url('/assets/background-blue360.png');
+        background-size: cover;
+        background-position: top;
+    }
+    
+
+    .testimonials-section h2 {
+        margin-top: -80px;
+        margin-bottom: 80px;
+        color: #003F7D;
+    }
+
+    .testimonials-section .row {
+        display: flex;
+        flex-direction: column; /* Apila las tarjetas verticalmente */
+        align-items: center; /* Centra las tarjetas horizontalmente */
+        height: 92vh;
+    }
+
+    .testimonial-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .testimonial-card img {
+        width: 90%;
+        height: 110% !important;   
+        object-fit: cover;
+        border-radius: 25px !important;
+        margin-left: -30px;
+    }
+
+    .flip-card-front {
+        height: 300px;
+    }
+
+    .flip-card-back {
+        width: 90%;
+        margin-left: 20px;
+        margin-bottom: -20px !important;
+        border-radius: 25px;
+        min-height: 300px !important;
+    }
+
+    .flip-card-back h5 {
+        font-size: 23px !important;
+        margin-bottom: -19px;
+    }
+
+    
+  .flip-card-back .vector-blue-orange {
+    position: absolute !important;
+    top: 0 !important;
+    left: 60%;
+    transform: translateX(-50%) !important;
+    width: 100% !important;
+    height: auto !important;
+    z-index: 1 !important;
+  }
+  
+
+    .flip-card-back p {
+        font-size: 16px !important;
+        margin-top: 20px;
+        padding: 20px 25px;
+    }
+
+    .card-title-wrapper h5 {
+        font-size: 20px !important;
+        font-weight: normal !important;
+        width: 200%;
+        margin-bottom: 10px;
+        margin-left: -52px !important;
+    }
+
+    .volunteer-form {
+        padding-top: 50px;
+    }
+        
+    .volunteer-form h3 {
+        width: 70%;
+        margin-left: 40px;
+    }
+
+    .volunteer-form h3, .volunteer-form h3 span {
+        font-size: 23px;
+        width: 100%;
+        margin-left: 0px;
+        font-weight: bold; 
+        margin-top: 20px;
+    }
+
+    .volunteer-form form {
+        padding: 50px 20px;
+        margin-bottom: 0;
+        width: 120%;
+        margin-left: -28px !important;
+    }
+
+    .volunteer-form form textarea.form-control {
+        height: 120px; /* Altura específica para el campo de texto */
+        resize: none; /* Evita que el usuario redimensione el campo */
+    }
+
+    .volunteer-form .btn-warning {
+        background-color: #F4681B;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 4px;
+        height: 50px;
+        width: 60% !important;
+        margin-left: -40%;
+        margin-top: -1px;
+    }
+
+    .bullets-container {
+        display: none;
+    }
+
+    .donation-section img {
+        width: 200px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+
+    .donation-section .container {
+        background-image: url('/assets/background-gray360.png') !important;
+        background-position: cover !important;
+        background-position: center;
+        height: 1700px !important;
+    }
+
+    .donation-section p, .donation-section p span {
+    font-size: 23px !important;
+    font-weight: bold !important;
+    margin-bottom: 80px;
+    }
+
+    .donation-section p {
+        margin-left: -50px !important;
+    }
+
+    .donation-section p.lead {
+        margin-top: 70px;
+        margin-left: 0px !important;
+    }
+
+
+    .donation-section ul {
+        list-style: none;
+        padding: 20px;
+    }
+
+    .donation-section ul li {
+        width: 130%;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: left;
+        color: #002348;
+        padding: 20px 0px;
+        line-height: 0.4;
+        margin-top: -120px;
+    }
+
+    .donation-section ul li img{
+        width: 45px;
+        margin-top: 8px;
+        padding-top: 40px;
+    }
+
+    .donation-section ul li img #text {
+        margin-top: -20px;
+    }
+
+    .donation-section h3, .donation-section h3 span {
+        font-size: 23px !important;
+        font-weight: bold !important;
+
+    }
+
+
+
+    .footer {
+        background-image: url(/assets/background360.png) !important;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        background-position: left;
+        margin-top: 50% !important;
+        
+    }
+    
+
+    .footer .container, .footer ul {
+        text-align: center;
+        margin-top: 60px;   
+        margin-left: -30px;
+    }
+
+    .footer .container .list-unstyled {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+        margin-left: -35px !important;
+    }
+    
+    .footer p, .footer a {
+        font-size: 12px;
+        padding: 5px;
+        color: #fff !important;
+    }
+
+    .footer .social-icons a {
+        font-size: 12px;
+    }
+
+    .footer .container .row .col-md-4 {
+        margin-left: 65px;
+    }
+
+    .footer .container .row .col-md-4 img.footer-logo {
+        margin-left: -60px !important;
+    }
+
+    .footer .mt-3 {
+        width: 80%;
+        padding: 10px !important;
+        margin-left: 65px;
+        font-size: 12px;
+    }
+
+    .copyright .mt-3 {
+        font-weight: 600;
+    }
+    
+
+    .footer .social-icons a {
+        color: #002348 !important;
+    }
+
+    .footer .social-icons a img {
+        padding: 6px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .custom-line {
+        margin-left: 50px;
+    }
+
+
+
+}
+

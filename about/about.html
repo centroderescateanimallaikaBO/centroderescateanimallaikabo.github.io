@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Laika</title>
+    <link rel="stylesheet" href="/about/about.css">
+    <link rel="stylesheet" href="/global.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Encabezado y Navegación -->
+    <header class="text-white py-3" style="background-color: #002348;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo -->
+            <div class="d-flex align-items-center">
+                <img src="/assets/logo-horizontal.png" alt="Laika Logo" style="height: 80px;">
+            </div>
+
+            <!-- Icono de menú para pantallas pequeñas -->
+            <div class="menu-icon-container d-lg-none" onclick="toggleMenu()">
+                <img src="/assets/icons/menu-blanco.svg" alt="Menu Icon" class="menu-icon" style="height: 50px; width: 50px;">
+            </div>
+
+            <!-- Navbar principal en desktop -->
+            <nav class="d-none d-lg-flex gap-3 main-nav">
+                <a href="/index.html" class="nav-link mx-2">Inicio</a>
+                <a href="/about/about.html" class="nav-link active mx-2">Nosotros</a>
+                <a href="/adoption/adoption.html" class="nav-link mx-2">Adopción</a>
+                <a href="/support/support.html" class="nav-link mx-2">Apóyanos</a>
+                <a href="/contact/contact.html" class="nav-link mx-2">Contáctanos</a>
+            </nav>
+        </div>
+
+        <!-- Menú desplegable en mobile -->
+        <div class="dropdown-menu d-lg-none" id="mobile-menu">
+            <a href="/index.html" class="dropdown-item">Inicio</a>
+            <a href="/about/about.html" class="dropdown-item">Nosotros</a>
+            <a href="/adoption/adoption.html" class="dropdown-item">Adopción</a>
+            <a href="/support/support.html" class="dropdown-item">Apóyanos</a>
+            <a href="/contact/contact.html" class="dropdown-item">Contáctanos</a>
+        </div>
+    </header>
+
+
+    <div class="hero-slider">
+        <!-- Slide 3 -->
+        <section class="hero-slide hero-section text-center text-white py-5 medical-attention-section">
+            <div class="container">
+                <h1>Atención médica</h1>
+                <p class="lead">Con la ayuda de tus donaciones y el patrocinio atendemos <br> a mascotas que requieren de atención médica.</p>
+                <a href="/adoption/adoption.html" class="no-underline">
+                    <button class="btn btn-warning">Contáctanos</button>
+                </a>
+            </div>
+        </section>
+        
+    <!-- Slide 1 -->
+        <section class="hero-slide hero-section text-center text-white py-5 adoption-hero">
+        <div class="container">
+            <h2>Rescate en situación <br> de emergencia</h2>
+            <p>Rescatamos a animales en situación de emergencia y <br> desastres naturales, accidentes o casos de maltrato extremo.</p>
+              <a href="/adoption/adoption.html" class="no-underline">
+                <button class="btn btn-warning">Contáctanos</button>
+            </a>
+        </div>
+      </section>
+    
+        <!-- Slide 2 -->
+        <section class="hero-slide hero-section text-center text-white py-5">
+          <div class="container">
+            <h1>Albergue temporal</h1>
+            <p class="lead">Proporcionamos refugio temporal para animales <br> que necesitan un lugar seguro mientras se recuperan.</p>
+            <a href="/adoption/adoption.html">
+
+            <a href="/adoption/adoption.html" class="no-underline">
+                <button class="btn btn-warning">Contáctanos</button>
+            </a>
+            
+            
+
+          </div>
+      </section>
+    </div>
+    
+<!-- Sección de Mensajes de Motivación -->
+<section class="motivation-section py-5">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <!-- Mensaje 1 -->
+            <div class="col-md-2">
+                <div class="message-box p-3 d-flex align-items-center justify-content-center text-center">
+                    No compres, brinda una nueva oportunidad
+                </div>
+            </div>
+            <!-- Mensaje 2 -->
+            <div class="col-md-2">
+                <div class="large-box message-box p-4 d-flex align-items-center justify-content-center text-center">
+                    Rescatar transforma vidas, incluyendo la tuya
+                </div>
+            </div>
+            <!-- Mensaje 3 -->
+            <div class="col-md-2">
+                <div class="message-box p-3 d-flex align-items-center justify-content-center text-center">
+                    Dale voz, apoya el rescate animal
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Quiénes Somos -->
+    <section class="about-us-section py-5 text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Título de la sección centrado en su contenedor -->
+                <div class="col-md-12 text-center mb-6">
+                    <h2 class="section-title">Quiénes Somos</h2>
+                </div>
+                <!-- Columna de texto -->
+                <div class="col-md-4">
+                    <p class="mt-2">
+                        Laika es un centro de rescate de animales domésticos en La Paz, Bolivia. Nos dedicamos a ayudar a perros y gatos en situación de calle.
+                    </p>
+                    <p>
+                        Nuestro personal y voluntarios apasionados trabajan incansablemente para encontrar a los animales abandonados y maltratados un nuevo hogar y una oportunidad para ser amados una vez más.
+                    </p>
+                    <p>
+                        Con más de diez años de experiencia, hemos rescatado a cientos de animales brindándoles el cuidado y afecto que merecen.
+                    </p>
+                </div>
+                <!-- Imagen de la sección -->
+                <div class="col-md-8">
+                    <img src="/assets/about-us.png" alt="Equipo de Laika" class="about-us-image img-fluid rounded mt-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección Misión y Visión -->
+ 
+    <section class="mission-vision-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mission-box">
+                    <h3>Misión</h3>
+                    <p>Rescatar animales en situación de abandono o maltrato ubicados en la ciudad de La Paz brindándoles atención médica, alimentación y refugio de manera temporal, promueve la adopción responsable de animales, educa y concientiza sobre la importancia del bienestar animal y el cómo tener un cuidado responsable una vez teniéndolos en casa.</p>
+                </div>
+                <div class="col-md-4 vision-box">
+                    <h3>Visión</h3>
+                    <p>Lograr un cambio positivo en la vida de los animales en situación de calle brindándoles una segunda oportunidad contribuyendo a la creación de una comunidad más responsable y compasiva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Valores en un solo párrafo -->
+    <section class="values-section py-1">
+        <div class="container d-flex justify-content-center">
+            <div class="col-md-6 text-center">
+                <div class="values-box">
+                    <h3>Valores</h3>
+                    <p>
+                        <strong>Compasión:</strong> Nos preocupamos por el bienestar animal y nos esforzamos para aliviar su sufrimiento. <br> <br>
+                        <strong>Integridad:</strong> Actuamos con honestidad y transparencia en todas nuestras acciones. <br> <br>
+                        <strong>Trabajo en equipo:</strong> Colaboramos con otras organizaciones para lograr nuestros objetivos. <br> <br>
+                        <strong>Innovación:</strong>  Buscamos nuevas y mejores formas de ayudar a los animales en situación de calle. <br> <br>
+                        <strong>Educación:</strong> Creemos que la educación es fundamental para cambiar la vida de los animales concientizando a las personas encargadas de mascotas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+  
+<!-- Sección de Servicios -->
+<section class="services-section">
+    <div class="container text-center">
+        <h2>Nuestros <span>Servicios</span></h2>
+
+        <!-- Caja de Información Adicional -->
+        <div class="additional-info-box mt-5 p-4 text-start">
+            <div class="service-item d-flex align-items-start">
+                <img src="/assets/paw.png" alt="Paw Icon" class="paw-icon">
+                <div>
+                    <h5>Albergue temporal: <span>Proporcionamos un refugio temporal para animales en situación de calle.</span></h5>
+                </div>
+            </div>
+            <div class="service-item d-flex align-items-start">
+                <img src="/assets/paw.png" alt="Paw Icon" class="paw-icon">
+                <div>
+                    <h5>Atención médica:
+                    <span>Con la ayuda de tus donaciones ayudamos a mascotas que necesitan atención médica.</span></h5>
+                </div>
+            </div>
+            <div class="service-item d-flex align-items-start">
+                <img src="/assets/paw.png" alt="Paw Icon" class="paw-icon">
+                <div>
+                    <h5>Rescate en situación de emergencia:
+                    <span>Rescatamos animales en accidentes, desastres naturales y maltrato animal extremo.</span></h5>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="/adoption/adoption.html" class="no-underline">
+            <button class="btn btn-warning">Contáctanos</button>
+        </a>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="/assets/servicio-1.png" alt="Albergue temporal" class="service-image">
+                    <div class="service-title">Albergue temporal</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="/assets/servicio-2.png" alt="Atención médica" class="service-image">
+                    <div class="service-title">Atención médica</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="/assets/servicio-3.png" alt="Rescate animal" class="service-image">
+                    <div class="service-title">Rescate animal</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+   
+</section>
+
+
+<!-- Pie de Página -->
+<footer class="footer text-white text-center py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <img src="/assets/logo.png" alt="Laika Logo" class="footer-logo" style="height: 150px;">
+            </div>
+            <div class="col-md-4">
+                <ul class="list-unstyled">
+                    <li><a href="/index.html" class="footer-link">Inicio</a></li>
+                    <li><a href="/about/about.html" class="footer-link">Nosotros</a></li>
+                    <li><a href="/adoption/adoption.html" class="footer-link">Adopción</a></li>
+                    <li><a href="/support/support.html" class="footer-link">Apóyanos</a></li>
+                    <li><a href="/contact/contact.html" class="footer-link">Contáctanos</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-md-4 text-start">
+                <!-- Enlace para el correo electrónico -->
+                <p>
+                    <img src="/assets/icons/mail.svg" alt="">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:centroderescateanimallaika@gmail.com" style="text-decoration: none; color: inherit;">
+                        centroderescateanimallaika@gmail.com
+                    </a>
+                </p>
+            
+                <!-- Enlace para la ubicación en Google Maps -->
+                <p>
+                    <img src="/assets/icons/location.svg" alt="">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="https://maps.app.goo.gl/Res7E7dX5H8jyVp28" target="_blank" style="text-decoration: none; color: inherit;">
+                        Alto Irpavi, Av. Circunvalación Ciudad <br> La Paz, Bolivia° 100
+                    </a>
+                </p>
+            
+                <!-- Enlace para WhatsApp -->
+                <p>
+                    <img src="/assets/icons/icono-whatsapp.svg" alt="">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="https://api.whatsapp.com/send?phone=59176708785" target="_blank" style="text-decoration: none; color: inherit;">
+                        76708785
+                    </a>
+                </p>
+            </div>
+            
+        </div>
+
+        <!-- Línea divisoria -->
+        <div class="custom-line"></div>
+
+        <div class="social-icons mt-3">
+            <a href="https://www.youtube.com/@CentroDeRescateAnimalLaika" target="_blank">
+                <img src="/assets/icons/icono-youtube.svg" alt="Youtube" width="24" height="24">
+            </a>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2FRescateLaika" target="_blank">
+                <img src="/assets/icons/x.svg" alt="X" width="24" height="24">
+            </a>
+            <a href="#https://www.tiktok.com/@rescateanimallaika target="_blank">
+                <img src="/assets/icons/icono-tiktok.svg" alt="TikTok" width="24" height="24">
+            </a>
+            <a href="https://www.facebook.com/CentroDeRescateAnimalLaika" target="_blank">
+                <img src="/assets/icons/icono-facebook.svg" alt="Facebook" width="24" height="24">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=59176708785" target="_blank">
+                <img src="/assets/icons/icono-whatsapp.svg" alt="WhatsApp" width="24" height="24">
+            </a>
+            <a href="https://www.instagram.com/CantroDeRescateAnimalLaika/" target="_blank">
+                <img src="/assets/icons/icono-instagram.svg" alt="Instagram" width="24" height="24">
+            </a>
+            <!-- Agrega más iconos según sea necesario -->
+        </div>
+    
+    </div>
+</footer>
+
+<div class="copyright">
+    <p class="mt-3">Centro de rescate animal Laika - Todos los derechos reservados</p>
+</div>
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/about/about.js"></script>
+    <script src="/home/home.js"></script>
+    <script src="/global.js"></script>
+</body>
+</html>

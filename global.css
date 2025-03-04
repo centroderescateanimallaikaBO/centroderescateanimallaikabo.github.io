@@ -1,0 +1,215 @@
+/* Estilo para el menú desplegable en mobile */
+#mobile-menu {
+    background-color: #003F7D;
+    color: #ffffff;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    padding: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#mobile-menu.show {
+    display: flex;
+}
+
+/* Estilos para cada enlace en el menú desplegable */
+#mobile-menu .dropdown-item {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 20px 30px;
+    text-align: left;
+    font-weight: 500;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#mobile-menu .dropdown-item:hover,
+#mobile-menu .dropdown-item:focus {
+    color: #F4681B !important;
+}
+
+#mobile-menu .dropdown-item.active {
+    background-color: #ff6600;
+    color: #F4681B;
+    font-weight: bold;
+}
+
+/* Icono de menú estilo hamburguesa */
+.menu-icon-container {
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-lines {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+/* Ajustes para pantallas de hasta 768px (tablets) */
+@media (max-width: 768px) {
+    header {
+        background-color: #002348;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    header img {
+        height: 60px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Mostrar icono de menú en pantallas pequeñas */
+    .menu-icon-container {
+        display: block;
+    }
+
+    /* Ocultar el navbar principal en pantallas pequeñas */
+    .main-nav {
+        display: none;
+    }
+
+    /* Menú desplegable oculto inicialmente */
+    .dropdown-menu {
+        display: none;
+        background-color: #002348;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        padding: 15px;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .dropdown-menu a {
+        display: block;
+        color: #fff;
+        padding: 10px 0;
+        text-decoration: none;
+        font-weight: 600;
+        border-bottom: 1px solid #444;
+    }
+
+    .dropdown-menu a:hover {
+        background-color: #003366;
+    }
+
+    .dropdown-menu.show {
+        display: block;
+    }
+
+
+}
+
+
+/* Estilos de pantalla para 360px */
+@media (max-width: 480px) {
+
+    /* Header */
+    header nav a.nav-link {
+        font-size: 10px;
+        width: 70px;
+        line-height: 28px;
+    }
+
+     /* Ocultar el logo horizontal en vista 360px */
+    header img[src="/assets/logo-horizontal.png"] {
+        display: none;
+    }
+
+    .menu-icon {
+        width: 35px !important;
+    }
+
+    /* Ocultar la imagen de fondo para dispositivos móviles */
+    .stats-section .container > img {
+        display: none;
+    }
+
+
+    /* Hero Section */
+    .hero-section {
+        height: auto; /* Ajusta automáticamente según el contenido */
+        min-height: 800px; /* Altura mínima */
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        padding: 20px 10px; /* Reduce el padding para móviles */
+        margin-bottom: 20px; /* Espaciado reducido para móviles */
+        background-size: cover; /* Asegura que la imagen cubra toda la sección */
+        background-position: center; /* Centra la imagen de fondo */
+        display: table-column-group;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Centraliza el texto */
+    }
+
+
+
+    .hero-section .container p {
+        font-size: 16px !important;
+        width: 70% !important;
+        margin-left: 45px !important;
+    }
+
+
+
+    .medical-attention-section .container {
+        margin-left: 12% !important;
+    }
+
+    /* Ajustes en medical-attention-section */
+    .medical-attention-section .container h1 {
+        font-size: 23px !important;
+        margin-left: 65px !important;
+        font-weight: bold;
+        margin-top: -150px !important;
+    }
+
+    .medical-attention-section .container p {
+        font-size: 16px !important;
+        margin-left: 25px !important;
+        width: 80% !important;
+    }
+
+    /* Adoption Section */
+    .adoption-hero {
+        height: 1000px !important;
+        object-fit: contain !important;
+    }
+
+
+    .adoption-hero .container p {
+        margin-left: 65px !important;
+        font-size: 16px !important;
+    }
+
+
+
+    .medical-attention-section .btn  {
+        font-size: 16px !important;
+        padding: 6px 14px !important;
+        margin-right: -70px !important;
+  
+    }
+
+
+}

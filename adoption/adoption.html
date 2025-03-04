@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopción - Laika</title>
+    <link rel="stylesheet" href="/adoption/adoption.css">
+    <link rel="stylesheet" href="/global.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Encabezado y Navegación -->
+    <header class="text-white py-3" style="background-color: #002348;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo -->
+            <div class="d-flex align-items-center">
+                <img src="/assets/logo-horizontal.png" alt="Laika Logo" style="height: 80px;">
+            </div>
+
+            <!-- Icono de menú para pantallas pequeñas -->
+            <div class="menu-icon-container d-lg-none" onclick="toggleMenu()">
+                <img src="/assets/icons/menu-blanco.svg" alt="Menu Icon" class="menu-icon" style="height: 50px; width: 50px;">
+            </div>
+
+            <!-- Navbar principal en desktop -->
+            <nav class="d-none d-lg-flex gap-3 main-nav">
+                <a href="/index.html" class="nav-link mx-2">Inicio</a>
+                <a href="/about/about.html" class="nav-link mx-2">Nosotros</a>
+                <a href="/adoption/adoption.html" class="nav-link active mx-2">Adopción</a>
+                <a href="/support/support.html" class="nav-link mx-2">Apóyanos</a>
+                <a href="/contact/contact.html" class="nav-link mx-2">Contáctanos</a>
+            </nav>
+        </div>
+
+        <!-- Menú desplegable en mobile -->
+        <div class="dropdown-menu d-lg-none" id="mobile-menu">
+            <a href="/index.html" class="dropdown-item">Inicio</a>
+            <a href="/about/about.html" class="dropdown-item">Nosotros</a>
+            <a href="/adoption/adoption.html" class="dropdown-item">Adopción</a>
+            <a href="/support/support.html" class="dropdown-item">Apóyanos</a>
+            <a href="/contact/contact.html" class="dropdown-item">Contáctanos</a>
+        </div>
+    </header>
+
+  <div class="hero-slider">
+    <!-- Slide 1 -->
+    <section class="hero-slide hero-section text-center text-white py-5 adoption-hero">
+      <div class="container">
+          <h2>Rescate en situación <br> de emergencia</h2>
+          <p>Rescatamos a animales en situación de emergencia y <br> desastres naturales, accidentes o casos de maltrato extremo.</p>
+          <a href="/adoption/adoption.html" class="no-underline">
+            <button class="btn btn-warning">Contáctanos</button>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- Slide 2 -->
+    <section class="hero-slide hero-section text-center text-white py-5">
+      <div class="container">
+        <h1>Albergue temporal</h1>
+        <p class="lead">Proporcionamos refugio temporal para animales <br> que necesitan un lugar seguro mientras se recuperan.</p>
+        <a href="/adoption/adoption.html" class="no-underline">
+            <button class="btn btn-warning">Contáctanos</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Slide 3 -->
+    <section class="hero-slide hero-section text-center text-white py-5 medical-attention-section">
+      <div class="container">
+        <h1>Atención médica</h1>
+        <p class="lead">Con la ayuda de tus donaciones y el patrocinio atendemos <br> a mascotas que requieren de atención médica.</p>
+        <a href="https://api.whatsapp.com/send?phone=59176708785" class="no-underline">
+            <button class="btn btn-warning">Contáctanos</button>
+        </a>
+      </div>
+    </section>
+  </div>
+
+
+
+
+  <!-- Requisitos de Adopción -->
+  <section class="adoption-requirements py-5">
+      <div class="container">
+          <h3>Requisitos para poder <span class="text-warning"> adoptar</span></h3>
+          <ul class="list-unstyled mt-4">
+              <li><img src="/assets/paw2.png" alt="Icono de huella" class="paw-icon"> <strong>Ser mayor de 21 años.</strong> <br>Al momento de presentarte para adoptar una mascota presenta tu identificación.</li>
+              <li><img src="/assets/paw2.png" alt="Icono de huella" class="paw-icon"> <strong>Tener una vivienda adecuada.</strong> <br>Es importante que cuentes con casa propia para el cuidado de las mascotas en caso de vivir en un departamento.</li>
+              <li><img src="/assets/paw2.png" alt="Icono de huella" class="paw-icon"> <strong>Contar con tiempo y disponibilidad.</strong> <br>Es importante que tengas el tiempo necesario para atender las necesidades de tu mascota.</li>
+              <li><img src="/assets/paw2.png" alt="Icono de huella" class="paw-icon"> <strong>Firmar un contrato de adopción.</strong> <br>Al firmar este contrato te comprometes a brindar los cuidados que requieren las mascotas y seas responsable con este rol.</li>
+              <li><img src="/assets/paw2.png" alt="Icono de huella" class="paw-icon"> <strong>Seguimiento y cuidado.</strong> <br>A todos los que adoptan a las mascotas del centro les pedimos que periódicamente nos envíen fotos de los mismos para asegurar su bienestar.</li>
+          </ul>
+      </div>
+  </section>
+
+
+<!-- Sección de Adopta Perros -->
+<section class="adopt-section perros py-5">
+    <div class="container text-center">
+        <h3 class="lato-bold">Adopta <span class="lato-black">perros</span></h3>
+        <div class="card-container">
+            <!-- Tarjeta Rocky -->
+            <div class="flip-card rocky">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/assets/rocky.png" alt="Rocky" class="card-img-top">
+                        <div class="card-info">
+                            <h5>Rocky</h5>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="/assets/vector-blue.png" alt="" class="vector-blue-orange">
+                        <h5>Rocky</h5>
+                        <p>Rocky es un pequeño peludo de 3 meses requiere de cuidados ya que fue separado de su mamá el actualmente se encuentra en el centro en espera de su nuevo hogar quienes le brinden los cuidados necesarios.</p>
+                        <a href="/adoption/adoption.html">
+                            <button class="btn btn-warning">Adopta</button>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta Bobby -->
+            <div class="flip-card bobby">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/assets/bobby.png" alt="Bobby" class="card-img-top">
+                        <div class="card-info">
+                            <h5>Bobby</h5>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="/assets/vector-blue.png" alt="" class="vector-blue-orange">
+                        <h5>Bobby</h5>
+                        <p>Juguetón y alegre, Bobby es un perrito de 2 años lleno de energía. Adora correr al aire libre y recibir caricias. Ideal para familias activas que disfruten de paseos y aventuras. 
+                            Max busca un hogar lleno de amor.</p>
+                            <a href="/adoption/adoption.html">
+                                <button class="btn btn-warning">Adopta</button>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta Luna -->
+            <div class="flip-card luna">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/assets/luna.png" alt="Luna" class="card-img-top">
+                        <div class="card-info">
+                            <h5>Luna</h5>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="/assets/wide-vector-blue.png" alt="" class="vector-blue-orange">
+                        <h5>Luna</h5>
+                        <p>Luna ya cuenta con 6 años sus dueños la dejaron en el centro ya que ellos se mudaron a otro pais y no pudieron llevarsela hoy es una masscota amigable, tierna y tranquila ayudanos a encontrarle un hogar.</p>
+                        <a href="/adoption/adoption.html">
+                            <button class="btn btn-warning">Adopta</button>
+                        </a>
+                    </div>
+                </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+            </div>
+            <!-- Tarjeta Descripción -->
+            <div class="description-card">
+                <p>Adoptar es el primer paso para transformar vidas.
+
+                    En nuestro centro de rescate, cada perro tiene una historia de lucha y esperanza, esperando el hogar amoroso que les brinde una segunda oportunidad. Al abrir tu corazón y tu hogar, no solo ganas un amigo leal y cariñoso, sino que también te conviertes en parte de la solución al abandono animal, ayudando a crear una sociedad más compasiva.
+                    
+                    En nuestro centro, nos aseguramos de que el proceso de adopción sea simple, seguro y accesible para todos. 
+                    
+                    ¡Da el paso y descubre el increíble vínculo que solo un perro rescatado puede ofrecerte!</p>
+            </div>
+        </div>
+    </div>
+    <div class="bullets-container">
+        <img src="/assets/bullets-blue.png" alt="">
+    </div>
+</section>
+
+<!-- Sección de Adopta Gatos -->
+<section class="adopt-section gatos py-5">
+    <div class="container text-center">
+        <h3 class="lato-bold">Adopta <span class="lato-black">gatos</span></h3>
+        <div class="card-container">
+            <!-- Tarjeta Descripción -->
+            <div class="description-card">
+                <p>Adoptar es más que darle un hogar a un animal, es ofrecerle una nueva oportunidad de vida. 
+
+                    En nuestro centro de rescate, cada gato tiene una historia única y especial, lista para encontrar un lugar donde ser amado y protegido. Al adoptar, no solo añades un felino a tu hogar, también ayudas a combatir el abandono animal, dándoles a estos pequeños seres una segunda oportunidad que tanto necesitan.
+                    
+                    El proceso de adopción en nuestro centro es sencillo y pensado para que encuentres a tu compañero perfecto de forma rápida y segura. 
+                    
+                    ¡Haz una diferencia hoy mismo y encuentra en un gato rescatado un compañero para toda la vida!</p>
+            </div>
+            <!-- Tarjeta Chocolate -->
+            <div class="flip-card chocolate">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/assets/chocolate.png" alt="Chocolate" class="card-img-top">
+                        <div class="card-info">
+                            <h5>Chocolate</h5>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="/assets/wide-vector-blue.png" alt="" class="vector-blue-orange">
+                        <h5>Chocolate</h5>
+                        <p>Chocolate es amistoso, obediente y adora jugar con niños. Siempre dispuesto a aprender trucos nuevos, disfruta los paseos y los juegos al aire libre. Espera un hogar donde sea parte esencial de la familia.</p>
+                        <a href="/adoption/adoption.html">
+                            <button class="btn btn-warning">Adopta</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta Perla -->
+            <div class="flip-card perla">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/assets/perla.png" alt="Perla" class="card-img-top">
+                        <div class="card-info">
+                            <h5>Perla</h5>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="/assets/vector-blue.png" alt="" class="vector-blue-orange">
+                        <h5>Perla</h5>
+                        <p>Perla es una gatita de 8 meses que lleva tres meses en el centro. Es muy cariñosa y juguetona. Fue rescatada de un hogar donde sufría maltrato, pero hoy está rehabilitada y lista para encontrar una familia que le brinde el amor que merece.</p>
+                        <a href="/adoption/adoption.html">
+                            <button class="btn btn-warning">Adopta</button>
+                        </a>                    
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta Late -->
+            <div class="flip-card late">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/assets/late.png" alt="Late" class="card-img-top">
+                        <div class="card-info">
+                            <h5>Late</h5>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="/assets/vector-blue.png" alt="" class="vector-blue-orange">
+                        <h5>Perla</h5>
+                        <p>Late es un gatito que fue rescatado de una alcantarilla. Después de recibir un cuidadoso tratamiento, ac está listo para encontrar un nuevo hogar y una familia que le dé todo el amor que necesita.</p>
+                        <a href="/adoption/adoption.html">
+                            <button class="btn btn-warning">Adopta</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bullets-container">
+        <img src="/assets/bullets-blue.png" alt="">
+    </div>
+</section>
+
+
+
+    <!-- Formulario de Voluntariado -->
+    <section class="volunteer-form py-3">
+        <div class="container text-center">
+            <h3>Formulario de <span> adopcion </span></h3>
+            <form class="mt-4 mx-auto" style="max-width: 800px;">
+                <div class="mb-3">
+                    <input type="text" class="form-control" style="padding-left: 20px;" placeholder="Nombre" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" style="padding-left: 20px;" placeholder="Número de contacto" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" style="padding-left: 20px;" placeholder="Nombre de la mascota que desea adoptar" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" style=" padding-left: 20px;" placeholder="Ciudad" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" style="min-height: 140px;  padding-left: 20px;" rows="4" placeholder="Mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">Enviar</button>
+            </form>
+        </div> 
+    </section>
+
+
+
+    <!-- Pie de Página -->
+    <footer class="footer text-white text-center py-4">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md-4 d-flex flex-column align-items-center">
+                  <img src="/assets/logo.png" alt="Laika Logo" class="footer-logo" style="height: 150px;">
+              </div>
+              <div class="col-md-4">
+                  <ul class="list-unstyled">
+                      <li><a href="/index.html" class="footer-link">Inicio</a></li>
+                      <li><a href="/about/about.html" class="footer-link">Nosotros</a></li>
+                      <li><a href="/adoption/adoption.html" class="footer-link">Adopción</a></li>
+                      <li><a href="/support/support.html" class="footer-link">Apóyanos</a></li>
+                      <li><a href="/contact/contact.html" class="footer-link">Contáctanos</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-md-4 text-start">
+                <!-- Enlace para el correo electrónico -->
+                <p>
+                    <img src="/assets/icons/mail.svg" alt="">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:centroderescateanimallaika@gmail.com" style="text-decoration: none; color: inherit;">
+                        centroderescateanimallaika@gmail.com
+                    </a>
+                </p>
+            
+                <!-- Enlace para la ubicación en Google Maps -->
+                <p>
+                    <img src="/assets/icons/location.svg" alt="">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="https://maps.app.goo.gl/Res7E7dX5H8jyVp28" target="_blank" style="text-decoration: none; color: inherit;">
+                        Alto Irpavi, Av. Circunvalación Ciudad <br> La Paz, Bolivia° 100
+                    </a>
+                </p>
+            
+                <!-- Enlace para WhatsApp -->
+                <p>
+                    <img src="/assets/icons/icono-whatsapp.svg" alt="">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="https://api.whatsapp.com/send?phone=59176708785" target="_blank" style="text-decoration: none; color: inherit;">
+                        76708785
+                    </a>
+                </p>
+            </div>
+            
+        </div>
+
+          </div>
+
+        <!-- Línea divisoria -->
+        <div class="custom-line"></div>
+
+
+          <div class="social-icons mt-3">
+              <a href="https://www.youtube.com/@CentroDeRescateAnimalLaika" target="_blank">
+                  <img src="/assets/icons/icono-youtube.svg" alt="Youtube" width="24" height="24">
+              </a>
+              <a href="https://x.com/i/flow/login?redirect_after_login=%2FRescateLaika" target="_blank">
+                  <img src="/assets/icons/x.svg" alt="X" width="24" height="24">
+              </a>
+              <a href="https://www.tiktok.com/@rescateanimallaika" target="_blank">
+                  <img src="/assets/icons/icono-tiktok.svg" alt="TikTok" width="24" height="24">
+              </a>
+              <a href="https://www.facebook.com/CentroDeRescateAnimalLaika" target="_blank">
+                  <img src="/assets/icons/icono-facebook.svg" alt="Facebook" width="24" height="24">
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=59176708785" target="_blank">
+                  <img src="/assets/icons/icono-whatsapp.svg" alt="WhatsApp" width="24" height="24">
+              </a>
+              <a href="https://www.instagram.com/CantroDeRescateAnimalLaika/" target="_blank">
+                  <img src="/assets/icons/icono-instagram.svg" alt="Instagram" width="24" height="24">
+              </a>
+              <!-- Agrega más iconos según sea necesario -->
+          </div>
+      </div>
+  </footer>
+
+  
+<div class="copyright">
+    <p class="mt-3">Centro de rescate animal Laika - Todos los derechos reservados</p>
+</div>
+
+  <script src="/about/about.js"></script>
+  <script src="/home/home.js"></script>
+
+
+</body>
+</html>

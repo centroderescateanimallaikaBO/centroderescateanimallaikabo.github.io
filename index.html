@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de rescate animal Laika</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/global.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- Encabezado y Navegación -->
+<header class="text-white py-3" style="background-color: #002348;">
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <div class="d-flex align-items-center">
+            <img src="/assets/logo-horizontal.png" alt="Laika Logo" style="height: 80px;">
+        </div>
+
+        <!-- Icono de menú para pantallas pequeñas -->
+        <div class="menu-icon-container d-lg-none" onclick="toggleMenu()">
+            <img src="/assets/icons/menu-blanco.svg" alt="Menu Icon" class="menu-icon" style="height: 50px; width: 50px;">
+        </div>
+
+        <!-- Navbar principal en desktop -->
+        <nav class="d-none d-lg-flex gap-3 main-nav">
+            <a href="/index.html" class="nav-link active mx-2">Inicio</a>
+            <a href="/about/about.html" class="nav-link mx-2">Nosotros</a>
+            <a href="/adoption/adoption.html" class="nav-link mx-2">Adopción</a>
+            <a href="/support/support.html" class="nav-link mx-2">Apóyanos</a>
+            <a href="/contact/contact.html" class="nav-link mx-2">Contáctanos</a>
+        </nav>
+    </div>
+
+    <!-- Menú desplegable en mobile -->
+    <div class="dropdown-menu d-lg-none" id="mobile-menu">
+        <a href="/index.html" class="dropdown-item">Inicio</a>
+        <a href="/about/about.html" class="dropdown-item">Nosotros</a>
+        <a href="/adoption/adoption.html" class="dropdown-item">Adopción</a>
+        <a href="/support/support.html" class="dropdown-item">Apóyanos</a>
+        <a href="/contact/contact.html" class="dropdown-item">Contáctanos</a>
+    </div>
+</header>
+
+
+
+    
+    
+    
+    <div class="hero-slider">
+        <!-- Slide 2 -->
+        <section class="hero-slide hero-section text-center text-white py-5">
+            <div class="container">
+                <h1>Albergue temporal</h1>
+                <p class="lead">Proporcionamos refugio temporal para animales <br> que necesitan un lugar seguro mientras se recuperan.</p>
+                <a href="/adoption/adoption.html" class="no-underline">
+                    <button class="btn btn-warning">Contáctanos</button>
+                </a>
+            </div>
+        </section>
+        <!-- Slide 3 -->
+        <section class="hero-slide hero-section text-center text-white py-5 medical-attention-section">
+            <div class="container">
+                <h1>Atención médica</h1>
+                <p class="lead">Con la ayuda de tus donaciones y el patrocinio atendemos <br> a mascotas que requieren de atención médica.</p>
+                <a href="/adoption/adoption.html" class="no-underline">
+                    <button class="btn btn-warning">Contáctanos</button>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Slide 1 -->
+        <section class="hero-slide hero-section text-center text-white py-5 adoption-hero">
+          <div class="container">
+            <h2>Rescate en situación <br> de emergencia</h2>
+            <p>Rescatamos a animales en situación de emergencia y <br> desastres naturales, accidentes o casos de maltrato extremo.</p>
+            <a href="/adoption/adoption.html" class="no-underline">
+                <button class="btn btn-warning">Contáctanos</button>
+            </a>
+          </div>
+      </section>
+    </div>
+      
+    
+    <!-- Sección de Estadísticas -->
+    <section class="stats-section py-5 text-center">
+        <div class="container">                 
+            <img src="/assets/stats.png" alt="">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="stat-item">
+                        <div class="icon-container">
+                            <img src="/assets/calendario.png" alt="Icono Calendario" class="stat-icon">
+                        </div>
+                        <h2 class="stat-number">7 años</h2>
+                        <p class="stat-description" >Trabajamos hace</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-item">
+                        <div class="icon-container">
+                            <img src="/assets/perros-rescatados.png" alt="Icono Perros" class="stat-icon">
+                        </div>
+                        <h2 class="stat-number">1195</h2>
+                        <p class="stat-description">Perros rescatados</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-item">
+                        <div class="icon-container">
+                            <img src="/assets/gatos-rescatados.png" alt="Icono Gatos" class="stat-icon">
+                        </div>
+                        <h2 class="stat-number">439</h2>
+                        <p class="stat-description">Gatos rescatados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Sección de Mascotas en Adopción -->
+<section class="adoption-section">
+    <div class="container text-center">
+        <h2>Mascotas en <span class="text-warning">Adopción</span></h2>
+        <div class="row no-gutters mt-4">
+            <!-- Tarjeta de Rocky -->
+            <div class="col-md-4">
+                <div class="card flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/assets/Ruddy.png" class="card-img-top" alt="Rocky">
+                            <h5 class="card-title mt-2">Ruddy</h5>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="/assets/vector-orange.png" class="vector-blue-orange" alt="">
+                            <h5 class="card-title">Ruddy</h5>
+                            <p>Ruddy es un perrito de 8 años debido a su edad avanzada requiere de un hogar de cuidado el se encuentra en buen estado, es el compañero ideal y fiel muy cariñoso y protector hoy necesita de ti.</p>
+                            <a href="/adoption/adoption.html">
+                                <button class="btn btn-warning">Adopta</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- Tarjeta de Max -->
+            <div class="col-md-4">
+                <div class="card flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/assets/Max.png" class="card-img-top" alt="Max">
+                            <h5 class="card-title mt-2">Max</h5>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="/assets/vector-orange.png" class="vector-blue-orange" alt="">
+                            <h5 class="card-title">Max</h5>
+                            <p>Gatito de pelaje negro y ojos amarillos que adora los abrazos y la tranquilidad. Siempre busca el rincón más cómodo para descansar. Necesita un sitio donde pueda ser consentida y recibir mucho amor.</p>
+                            <a href="/adoption/adoption.html">
+                                <button class="btn btn-warning">Adopta</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta de Milo -->
+            <div class="col-md-4">
+                <div class="card flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/assets/milo.png" class="card-img-top" alt="Milo">
+                            <h5 class="card-title mt-2">Milo</h5>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="/assets/vector-orange.png" class="vector-blue-orange" alt="">
+                            <h5 class="card-title">Milo</h5>
+                            <p>Milo es una pequeña mascota de raza pequeña lo hallamos perdido por la calle, desnutrido el ahora se encuentra en buen estado y necesita un hogar que lo pueda cuidar tu puedes ser parte de esta historia de cambio.</p>
+                            <a href="/adoption/adoption.html">
+                                <button class="btn btn-warning">Adopta</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Botones de navegación -->
+            <div class="carousel-nav">
+                <button id="adoption-prevBtn">&#10094;</button>
+                <button id="adoption-nextBtn">&#10095;</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="adoption-message-section">
+    <div class="container text-center">
+        <h3 class="adoption-title">Adoptar es un acto de amor y compromiso que cambia vidas.</h3>
+        <p class="adoption-text">Adoptar es un acto de amor y compromiso que cambia vidas. <br> Estas mascotas esperan un hogar lleno de cariño, lejos del abandono y la indiferencia. Al abrirles tu corazón, no solo les das una segunda oportunidad, sino que te conviertes en parte del cambio, brindando esperanza y apoyo a quienes más lo necesitan</p>
+
+    </div>
+    <div class="bullets-container">
+        <img src="/assets/bullets.png" alt="">
+    </div>
+</section>
+
+    
+
+    <!-- Sección de Historias de Éxito -->
+    <section class="success-stories text-center">
+        <div class="container">
+            <h2>Historias de <span class="text-warning">Éxito</span></h2>
+            <div class="row mt-4 justify-content-center">
+                <div class="col-md-3">
+                    <div class="card p-3 shadow-sm story-card">
+                        <h5 class="card-title" style="margin-left: 65px;">Buddy</h5>
+                        <p class="card-text">Buddy llegó al centro de rescate como un cachorro atemorizado. Tras meses de cuidados y socialización, se convirtió en un perro juguetón y cariñoso. Su nueva familia lo adoptó y ahora disfruta de largas caminatas y juegos en el parque, demostrando que con paciencia 
+                            y amor, cualquier perro puede superar sus miedos.</p>
+                        <img src="/assets/historia-1.png" alt="Buddy" class="story-image mb-3">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card p-3 shadow-sm story-card">
+                        <h5 class="card-title" style="margin-left: 80px;">Billy</h5>
+                        <p class="card-text">Billy era un gato callejero que desconfiaba de los humanos. En el centro de rescate, aprendió a confiar y a disfrutar de las caricias. Fue adoptada por una pareja que trabaja desde casa y ahora se ha convertido en el compañero perfecto, acurrucándose en sus piernas mientras trabajan.</p>
+                        <img src="/assets/historia-2.png" alt="Billy" class="story-image mb-3">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card p-3 shadow-sm story-card">
+                        <h5 class="card-title" style="margin-left: 60px;">Viernes</h5>
+                        <p class="card-text">Viernes fue encontrada en un estanque contaminado y estaba muy débil. 
+                            Gracias a los cuidados del veterinario, se recuperó por completo. Hoy en día, vive en un hermoso estanque en el jardín de su nueva familia, donde puede nadar y tomar el sol todo el día.</p>
+                            <img src="/assets/historia3.png" alt="Viernes" class="story-image mb-3">
+                        </div>
+                </div>
+                          <!-- Botones de navegación -->
+                <div class="carousel-nav">
+                    <button id="stories-prevBtn">&#10094;</button>
+                    <button id="stories-nextBtn">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Patrocinadores -->
+    <section class="sponsors-section text-center py-5">
+        <div class="container">
+            <h2>Nuestros <span class="text-warning">Patrocinadores</span></h2>
+            <div class="sponsor-description mt-3 text-center">
+                <p>En Laika, nuestra misión es rescatar, rehabilitar y encontrar hogares para animales necesitados. Sabemos que, con el apoyo de grandes empresas, podemos ampliar nuestro impacto y llegar a más personas, logrando que más animales encuentren una segunda oportunidad. Se parte de este cambio y comunicate con nosotros.</p>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=59176708785" class="no-underline">
+                <button class="btn btn-warning">Contáctanos</button>
+            </a>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-md-3">
+                <div class="sponsor-icon">
+                    <img src="/assets/patrocinador1.png" alt="Patrocinador 1">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="sponsor-icon">
+                    <img src="/assets/patrocinador2.png" alt="Patrocinador 2">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="sponsor-icon">
+                    <img src="/assets/patrocinador3.png" alt="Patrocinador 3">
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+
+<!-- Pie de Página -->
+<footer class="footer text-white text-center py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <img src="/assets/logo.png" alt="Laika Logo" class="footer-logo" style="height: 150px;">
+            </div>
+            <div class="col-md-4">
+                <ul class="list-unstyled">
+                    <li><a href="/index.html" class="footer-link">Inicio</a></li>
+                    <li><a href="/about/about.html" class="footer-link">Nosotros</a></li>
+                    <li><a href="/adoption/adoption.html" class="footer-link">Adopción</a></li>
+                    <li><a href="/support/support.html" class="footer-link">Apóyanos</a></li>
+                    <li><a href="/contact/contact.html" class="footer-link">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 text-start">
+                <!-- Enlace para el correo electrónico -->
+                <p>
+                    <img src="/assets/icons/mail.svg" alt="">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:centroderescateanimallaika@gmail.com" style="text-decoration: none; color: inherit;">
+                        centroderescateanimallaika@gmail.com
+                    </a>
+                </p>
+            
+                <!-- Enlace para la ubicación en Google Maps -->
+                <p>
+                    <img src="/assets/icons/location.svg" alt="">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="https://maps.app.goo.gl/Res7E7dX5H8jyVp28" target="_blank" style="text-decoration: none; color: inherit;">
+                        Alto Irpavi, Av. Circunvalación Ciudad <br> La Paz, Bolivia° 100
+                    </a>
+                </p>
+            
+                <!-- Enlace para WhatsApp -->
+                <p>
+                    <img src="/assets/icons/icono-whatsapp.svg" alt="">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="https://api.whatsapp.com/send?phone=59176708785" target="_blank" style="text-decoration: none; color: inherit;">
+                        76708785
+                    </a>
+                </p>
+            </div>
+            
+        </div>
+
+        </div>
+
+
+        <!-- Línea divisoria -->
+        <div class="custom-line"></div>
+
+
+
+
+        <div class="social-icons mt-3">
+            <a href="https://www.youtube.com/@CentroDeRescateAnimalLaika" target="_blank">
+                <img src="/assets/icons/icono-youtube.svg" alt="Youtube" width="24" height="24">
+            </a>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2FRescateLaika" target="_blank">
+                <img src="/assets/icons/x.svg" alt="X" width="24" height="24">
+            </a>
+            <a href="#https://www.tiktok.com/@rescateanimallaika target="_blank">
+                <img src="/assets/icons/icono-tiktok.svg" alt="TikTok" width="24" height="24">
+            </a>
+            <a href="https://www.facebook.com/CentroDeRescateAnimalLaika" target="_blank">
+                <img src="/assets/icons/icono-facebook.svg" alt="Facebook" width="24" height="24">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=59176708785" target="_blank">
+                <img src="/assets/icons/icono-whatsapp.svg" alt="WhatsApp" width="24" height="24">
+            </a>
+            <a href="https://www.instagram.com/CantroDeRescateAnimalLaika/" target="_blank">
+                <img src="/assets/icons/icono-instagram.svg" alt="Instagram" width="24" height="24">
+            </a>
+            <!-- Agrega más iconos según sea necesario -->
+        </div>
+    </div>
+</footer>
+
+
+<div class="copyright">
+    <p class="mt-3">Centro de rescate animal Laika - Todos los derechos reservados</p>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/home/home.js"></script>
+    <script src="/about/about.js"></script>
+
+    
+</body>
+</html>

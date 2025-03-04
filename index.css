@@ -1,0 +1,1827 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+body, html {
+    max-width: 1500px; /* Limita el ancho máximo a 360px */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Fondo del navbar */
+header {
+    background-color: #002348; 
+}
+
+/* Estilo base para los enlaces del navbar */
+header nav a.nav-link {
+    background-color: #fff; 
+    color: #002348 !important; 
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    width: 120px;
+    height: 34px; 
+    line-height: 34px; 
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 0 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo para el enlace activo ("Inicio") */
+header nav a.nav-link.active {
+    background-color: #F4681B !important; 
+    color: #fff !important; 
+}
+
+/* Hover para todos los enlaces */
+header nav a.nav-link:hover {
+    background-color: #B75018; 
+    color: #fff !important; 
+}
+
+
+.container .icon-container img {
+    width: 100px;
+    margin-left: 50px;
+
+    
+}
+
+.container .card-title img {
+    width: 100px;
+}
+
+.container .card {
+    width: 60% !important;
+    justify-content: center;
+    
+}
+
+/* Hero de home */
+
+.hero-section {
+    background-color: #003366; 
+    background-image: url('../assets/hero-1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 768px;
+    width: 100% !important;
+    color: #fff;
+    padding: 100px 0;
+    margin-bottom: 80px !important;
+}
+
+.hero-section .container {
+    margin-top: 50px;
+}
+
+.hero-section .container h1{
+    font-weight: 650;
+    font-size: 2.5rem !important;
+}
+
+.hero-section .container p {
+    color: #ffffff !important;
+    font-weight: 400 !important;
+    font-size: 20px !important;
+    line-height: 1.5 !important;
+    text-align: center;
+    margin-top: 18px !important;
+    margin-bottom: 28px !important;
+}
+
+
+button.btn-warning {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #F4681B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 9px 35px;
+}
+
+.btn-warning:hover {
+    background-color: #B75018 !important; /* Naranja más oscuro al pasar el mouse */
+    color: #fff !important; /* Texto blanco al pasar el mouse */
+}
+
+
+/* Hero de nosotros */
+.medical-attention-section {
+    background-image: url('/assets/hero-2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    height: 768px;
+}
+
+.medical-attention-section .container {
+    margin-top: 205px;
+}
+
+.medical-attention-section .container h1 {
+    margin-left: -25%;
+    font-weight: 650;
+    margin-bottom: 20px;
+}
+
+.medical-attention-section .container p { 
+    margin-left: -30% !important;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.medical-attention-section button.btn-warning {
+    margin-left: -26% !important;
+    font-size: 18px;
+    margin-top: 0px !important;
+    font-weight: 500;
+    background-color: #F4681B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 9px 35px;
+}
+
+.btn-warning:hover {
+    background-color: #B75018 !important; /* Naranja más oscuro al pasar el mouse */
+    color: #fff !important; /* Texto blanco al pasar el mouse */
+}
+
+
+/* Hero de Adopción */
+.adoption-hero {
+    background-image: url('/assets/hero-3.jpg'); /* Ajusta la imagen según tu archivo */
+    background-size: cover;
+    height: 768px;
+    background-position: center;
+    padding: 60px 0;
+    color: #fff;
+}
+.adoption-hero h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 15%;
+    margin-bottom: 10px;
+    margin-left: -25% !important;
+}
+.adoption-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-left: -25% !important;
+}
+.adoption-hero button {
+    font-weight: 500;
+    padding: 9px 35px;
+    margin-left: -26% !important;
+    margin-top: -8px !important;
+}
+
+
+
+/* Oculta todas las diapositivas excepto la activa */
+.hero-slide {
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+.hero-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+
+.stat-item {
+    margin-top: -242px !important;
+    margin-left: 70px;
+}
+
+.stat-item .icon-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: -50px;
+}
+
+
+
+.stat-number {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.stat-description {
+    font-size: 28px !important;
+    font-weight: bold !important;
+    color: #003F7D !important;
+}
+
+
+.stats-section {
+    color: #002348;
+    margin-top: 200px;
+    padding: 0px 0;
+    height: 265px;
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto de los elementos internos */
+}
+
+.stats-section .container {
+    max-width: 700px;
+    margin: 0 auto; /* Asegura que el contenedor esté centrado */
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: center; /* Centra el contenido internamente */
+    align-items: center; /* Centra los elementos dentro de la columna */
+}
+
+
+
+.stats-section .display-5 {
+    font-size: 2.5rem;
+    color: #002348; 
+}
+
+.stats-section p {
+    color: #002348;
+    text-align: center;
+}
+
+.adoption-section {
+    background-image: url('/assets/background-adoption.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    width: 100%;
+    height: 900px;
+    padding: 50px 0;
+}
+
+.adoption-section h2 {
+    color: #002348;
+    font-size: 32px !important;
+    padding-bottom: 300px;
+}
+
+.adoption-section h2 span {
+    color: #F4681B !important;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Configuración de la vista de tarjetas lado a lado en pantallas grandes */
+.adoption-section .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px; /* Añade espacio alrededor del contenedor */
+}
+
+.adoption-section .col-md-4 {
+    flex: 0 0 300px; /* Tamaño fijo para cada tarjeta */
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.adoption-section .card {
+    border: none;
+    width: 180%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto; /* Centra cada tarjeta dentro de su columna */
+}
+
+.adoption-section .container {
+    margin-top: 0%;
+}
+
+.adoption-section .card img {
+    width: 180%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.card-title {
+    margin-top: 10px;
+    color: #002348;
+    font-weight: bold;
+}
+
+/* Configuración de las flip-cards */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-back {
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    justify-content: space-evenly; /* Distribuye los elementos uniformemente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    background-color: #fff;
+    color: #002348;
+    transform: rotateY(180deg);
+    height: 350px;
+    margin-top: -170px;
+    width: 180%;
+    margin-left: -66px;
+    border-radius: 25px;
+}
+
+
+.flip-card-back h5 {
+    color: #fff;
+    font-size: 32px; /* Ajusta el tamaño del título */
+    font-weight: normal;
+    margin: 0; /* Elimina márgenes para evitar distorsión */
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    margin-top: 15px;
+}
+
+.flip-card-back p {
+    background-color: #fff;
+    color: #002348;
+    font-size: 16px;
+    font-weight: light;
+    line-height: 1.5;
+    text-align: left; /* Centra el texto horizontalmente */
+    padding: 0px 30px; /* Espaciado interno para que no se vea ajustado */
+    margin-top: 25px; /* Espaciado entre el párrafo y otros elementos */
+    border-radius: 8px; /* Redondea los bordes del fondo blanco */
+}
+
+.flip-card-back button {
+    background-color: #f4681b; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    font-size: 1rem;
+    border: none;
+    padding: 15px 70px !important; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    margin-top: auto; /* Asegura que el botón quede al final */
+    margin-bottom: 20px;
+}
+
+.flip-card-back button:hover {
+    background-color: #d05716; /* Color de fondo en hover */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+.flip-card-back .btn {
+    background-color: #F4681B;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.flip-card-back .btn:hover {
+    background-color: #B75018;
+    color: #fff;
+}
+
+.flip-card-back .vector-blue-orange {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0; /* Alineado al top */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Realinea para centrar exactamente */
+    width: 100% !important; /* Ajusta el ancho al contenedor */
+    max-width: 500px; /* Limita el ancho máximo (ajústalo según sea necesario) */
+    height: 120px; /* Establece una altura fija */
+    z-index: 1; /* Asegura que esté detrás del contenido */
+    object-fit: cover !important; /* Ajusta el contenido sin distorsionarlo */
+    border-radius: 10px 10px 0 0; /* Opcional: bordes redondeados */
+    padding-bottom: 60px;
+  }
+
+  
+  .flip-card-back {
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    justify-content: space-evenly; /* Distribuye los elementos uniformemente */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+
+/* Estilo de la sección de mensaje de adopción */
+.adoption-message-section {
+    background-color: #fff;
+    margin-top: -20% !important;
+    color: #002348 !important;
+    width: 935px;
+    margin: 40px;
+    border-radius: 25px;
+    position: relative;
+    bottom: 0;
+    max-width: 90%; /* Limita el ancho máximo al 90% del contenedor */
+    margin: 40px auto; /* Centra horizontalmente y agrega margen superior e inferior */    border-radius: 25px;
+}
+
+.flip-card-front h5 {
+    color: #fff;
+    font-weight: 600;
+    margin-top: -56px !important;
+    font-size: 32px;
+}
+
+.adoption-message-section h3, p, ul li{
+    color: #002348 !important;
+}
+
+.adoption-message-section h3 {
+    padding-top: 25px;
+}
+
+
+
+.adoption-message-section .adoption-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+
+.adoption-message-section .adoption-text {
+    font-size: 16px !important;
+    color: #002348 !important;
+    text-align: center;
+    padding: 0 55px;
+    text-align: left;
+    margin-bottom: -5px;
+}
+
+
+
+.bullets-container img {
+    margin-bottom: -110px;
+    margin-left: 32%;
+}
+
+
+
+
+/* Estilos para la sección de Historias de Éxito */
+.success-stories {
+    margin-top: 230px;
+}
+
+.success-stories .container {
+    max-width: 1140px;
+}
+
+.success-stories .card {
+    background-color: #003F7D;
+    color: #fff;
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    max-height: 530px;
+    width: 100% !important;
+}
+
+
+.success-stories h2 {
+    margin-top: 140px !important;
+    margin-bottom: 60px !important;
+    font-size: 32px;
+    color: #003F7D;
+}
+
+.story-card {
+    background-color: #003366;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Evita que los elementos sobresalgan */
+}
+
+.story-card:hover {
+    transform: translateY(-10px);
+}
+
+.story-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 180px; /* Ajusta para que las imágenes tengan un tamaño uniforme */
+    object-fit: cover; /* Recorta la imagen para ajustarse */
+}
+
+.story-card .card-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff !important;
+    position: absolute;
+    top: 0 !important;
+    margin: 20px;
+}
+
+.story-card .card-text {
+    font-size: 0.9rem;
+    color: #ffffff !important;
+    margin-top: 30px !important;
+    margin: 0px;
+    padding: 20px;
+    text-align: left; /* Para alinear el texto */
+    font-size: 16px !important;
+    font-weight: 300;
+    line-height: 1.2 !important;
+    min-height: 290px !important;
+}
+
+.card-text p {
+    margin-top: 10px !important;
+
+}
+
+/* Separación entre imágenes y descripción en las tarjetas */
+.story-image.mb-3 {
+    margin-bottom: 0;
+}
+
+.sponsors-section {
+    background-image: url('/assets/background-gray.png'); /* Fondo gris claro */ 
+}
+
+.sponsors-section .row {
+
+    margin-left: 12.4%;
+    margin-bottom: 10px;
+}
+
+
+.sponsors-section .row .col-md-3, /* Ajusta este selector según las columnas */
+.sponsors-section .row .col-md-4 {
+    display: flex;
+    justify-content: center; /* Centra cada ícono en su columna */
+    align-items: center;
+}
+
+.sponsors-section .row .col-md-4 .text-star{
+    margin-top: 20px;
+
+}
+
+.sponsors-section h2 {
+    font-size: 32px;
+    color: #003F7D; /* Azul oscuro para el título */
+    margin-bottom: 110px;
+}
+
+
+/* Aplica el color naranja a cualquier elemento con la clase .text-warning dentro de .sponsors-section */
+.sponsors-section .text-warning, .success-stories .text-warning {
+    font-weight: bold;
+    font-size: 32px;
+    color: #F4681B !important; /* Color naranja para "patrocinadores" */
+}
+
+
+.sponsor-description {
+    background-color: #003F7D; 
+    color: #ffffff; 
+    padding: 20px 70px;
+    border-radius: 15px; 
+    max-width: 820px; 
+    margin: 0 auto; 
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5; 
+}
+
+.sponsors-section p {
+    margin-top: 5px !important; 
+}
+
+
+.sponsor-icon img {
+    margin: 50px;
+    width: 100% !important; /* Ajusta el tamaño de los íconos */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsors-section .btn-warning {
+    background-color: #F4681B; /* Fondo del botón en naranja */
+    color: #ffffff; /* Texto blanco en el botón */
+    padding: 10px 35px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    margin-bottom: -70px;
+    transition: background-color 0.3s;
+}
+
+.sponsors-section .btn-warning:hover {
+    background-color: #B75018; /* Oscurecer el botón al pasar el cursor */
+}
+
+
+
+.footer {
+
+    background-image: url('/assets/background-3.png') !important;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    margin-top: -3% !important;
+    width: 100%;
+}
+
+.footer .container {
+    margin-top: 60px !important;
+}
+
+
+.footer .mt-3 {
+    justify-content: center !important;
+    color: #002348 !important;
+    font-weight: bold;
+    font-size: 12px !important;
+    margin-top: 32px !important;
+    margin: 0px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.mt-3 p {
+    color: #fff !important;
+    text-align: left;
+    font-family: Lato !important;
+    font-size: 16px !important;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.footer .container .list-unstyled {
+    margin-right: 40px;
+
+}
+
+.footer ul {
+margin-left: 70px !important;
+text-align: left;
+}
+
+
+.footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-link:hover {
+    text-decoration: none;
+    color: #F4681B;
+}
+
+.footer p, .footer a {
+    font-size: 0.9rem;
+    padding: 0;
+    color: #fff !important;
+}
+
+.footer .col-md-4 a:hover {
+    filter: brightness(0) saturate(100%) invert(38%) sepia(87%) saturate(1347%) hue-rotate(345deg) brightness(95%) contrast(97%);
+    transition: filter 0.3s ease; /* Transición suave para el efecto de hover */
+}
+
+.footer .col-md-4 img:hover {
+    filter: brightness(0) saturate(100%) invert(38%) sepia(87%) saturate(1347%) hue-rotate(345deg) brightness(95%) contrast(97%);
+    transition: filter 0.3s ease; /* Transición suave para el efecto de hover */
+}
+
+
+.copyright .mt-3 {
+    justify-content: center !important;
+    color: #002348 !important;
+    font-weight: bold;
+    font-size: 12px !important;
+    margin-top: 9px !important;
+    margin: 0px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.social-icons a {
+    color: #002348 !important;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: filter 0.1s ease;
+}
+
+.social-icons a:hover img {
+    filter: brightness(0) saturate(100%) invert(38%) sepia(87%) saturate(1347%) hue-rotate(345deg) brightness(95%) contrast(97%);
+}
+
+
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.custom-line {
+    background-color: #ffffff; /* Asegura que sea blanco puro */
+    height: 1px; /* Ajusta el grosor */
+    width: 90%; /* Ajusta el ancho */
+    margin: 0 auto; /* Centra horizontalmente */
+    margin-top: 40px; /* Espaciado superior */
+    margin-bottom: 30px; /* Espaciado inferior */
+    border-radius: 2px; /* Redondea un poco los bordes, opcional */
+}
+
+
+.sponsor-icon img {
+    width: 60px;
+    height: auto;
+    filter: brightness(1.2); /* Aumenta el brillo sin invertir el color */
+}
+
+.carousel-nav {
+    display: none; /* Oculta los botones en pantallas grandes */
+}
+
+
+
+@media (max-width: 769px) {
+
+    body, html {
+        max-width: 769px; /* Limita el ancho máximo a 360px */
+        overflow-x: hidden; /* Evita el desbordamiento horizontal */
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+
+    .hero-section {
+        background-size: cover; /* Cambiar a cover para que ocupe todo el contenedor proporcionalmente */
+        background-position: center;
+        height: 408px !important;
+        max-height: 500px !important;
+        width: 100%; /* Ajusta al ancho del contenedor */
+        margin: 0 auto; /* Centra el contenido horizontalmente */
+        color: #fff;
+        padding: 20px 0; /* Espaciado interno para mantener consistencia */
+        margin-bottom: 80px !important;
+        overflow: hidden; /* Oculta cualquier contenido que desborde */
+    }
+    
+
+    .medical-attention-section .container h1 {
+        margin-left: -190px !important;
+        font-size: 23px !important;
+    }
+
+    .medical-attention-section .container {
+        margin-top: 200px !important;
+
+    }
+
+    .medical-attention-section .container p {
+        margin-left: -240px !important;
+        font-size: 16px !important;
+    }
+
+    .medical-attention-section button.btn-warning {
+        margin-left: -27% !important;
+  
+    }
+
+    .hero-section .container h1 {
+        margin-top: -80px !important;
+        font-size: 23px !important;
+    }
+
+    .hero-section .container p {
+        font-size: 16px !important;
+        margin-bottom: -10px;
+    }
+
+
+    .adoption-hero .container h2 {
+        margin-top: 89px !important;
+        font-size: 23px !important; 
+        margin-left: -200px !important;
+    }
+
+    .adoption-hero .container p {
+        margin-left: -240px !important;
+    }
+
+    .adoption-hero button {
+        margin-left: -27% !important;
+        padding: 9px 35px;
+        
+    }
+
+
+    .adoption-section {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 830px;
+        padding: 30px 0;
+        margin-top: 20px;
+    }
+
+    .adoption-section h2 {
+        color: #fff;
+        font-size: 23px !important;
+        padding-bottom: 30px;
+        margin-bottom: 240px;
+        color: #002348;
+    }
+
+    .adoption-section h2 span {
+        color: #F4681B;
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    /* Alineación y configuración de la vista de tarjetas lado a lado */
+    .adoption-section .row {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    .adoption-section .col-md-4 {
+        flex: 0 0 30%; /* Tamaño proporcional para cada tarjeta */
+        max-width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .adoption-section .card {
+        border: none;
+        width: 100%;
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .adoption-section .card img {
+        width: 195%;
+        height: 300px;
+        min-height: 300px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .flip-card h5 {
+        margin-top: -40px !important;
+        color: #fff;
+        font-weight: bold;
+        font-size: 23px !important;
+    }
+
+    /* Configuración de las flip-cards */
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flip-card-back {
+        background-color: #fff;
+        color: #002348;
+        transform: rotateY(180deg);
+        height: 300px;
+        min-height: 300px;
+        margin-top: -150px;
+        width: 210%;
+        margin-left: -58px;
+        border-radius: 17px;
+        display: flex !important; /* Activa Flexbox */
+        flex-direction: column !important; /* Organiza los elementos en una columna */
+        justify-content: space-evenly !important; /* Distribuye los elementos uniformemente */
+        align-items: center !important; 
+    }
+
+    
+
+.flip-card-back h5 {
+    color: #fff !important;
+    font-size: 32px; /* Ajusta el tamaño del título */
+    font-weight: normal;
+    margin: 0; /* Elimina márgenes para evitar distorsión */
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    margin-top: 20px !important;
+}
+
+    .flip-card-back .vector-blue-orange {
+        position: absolute !important; /* Asegura que la imagen se posicione dentro del contenedor */
+        top: -122px !important; /* Alinea la imagen con la parte superior del contenedor */
+        left: 0; /* Alinea la imagen con el borde izquierdo */
+        transform: none !important; /* Elimina la transformación para centrar */
+        width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+        height: auto !important; /* Define una altura fija para la imagen */
+        z-index: 1; /* Coloca la imagen detrás de otros elementos */
+        object-fit: contain !important; /* Ajusta el contenido sin distorsionarlo */
+        border-radius: 10px 10px 0 0; /* Bordes redondeados para un diseño más limpio */
+        padding: 0 !important; /* Elimina cualquier padding que pueda estar afectando el diseño */
+    }
+
+
+    .flip-card-back p {
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-align: justify;
+        padding: 0px 30px;
+        line-height: 1.1;
+        font-weight: normal;
+        margin-top: 20px;
+        letter-spacing: -0.9px; /* Reduce el espacio entre letras */
+        font-family: lato !important;
+      }
+
+    .flip-card-back .btn {
+        background-color: #F4681B;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px 20px !important;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .flip-card-back .btn:hover {
+        background-color: #B75018;
+        color: #fff;
+    }
+
+    /* Estilo de la sección de mensaje de adopción */
+    .adoption-message-section {
+        background-color: #fff;
+        color: #002348;
+        width: 88%;
+        margin: 20px auto;
+        border-radius: 25px;
+        margin-top: -250px !important;
+    }
+
+    .adoption-message-section .container {
+        padding: 10px;
+    }
+
+    .adoption-message-section h3, p, ul li {
+        color: #002348;
+    }
+
+    .adoption-message-section .adoption-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #003366;
+        margin-bottom: 12px;
+        margin-top: -20px;
+    }
+
+    .adoption-message-section .adoption-text {
+        font-size: 14px;
+        color: #002348;
+        text-align: left;
+        padding: 0 20px;
+        font-weight: 300;
+        margin-bottom: 5px;
+
+    }
+
+    .bullets-container  {
+        margin-top: -20px;
+        margin-bottom: -140px;
+        margin-left: 32%;
+
+    }
+
+    .bullets-container img {
+        width: 60%;
+        margin-left: -5%;
+        padding-bottom: 30px;
+    }
+
+    .sponsors-section {
+        background-image: url('/assets/background-gray768.png') !important;
+        height: 740px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0 auto;
+    }
+    
+    .sponsors-section h2, .sponsors-section .text-warning {
+        margin-top: -30px;
+        margin-bottom: 90px;
+        font-size: 23px !important;
+    }
+
+    .sponsors-section .row {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .sponsors-section .row img {
+        margin-left: 0;
+    }
+
+    .sponsor-icon img {
+        width: 350px !important;
+        padding-left: 140px !important;
+        gap: 50px;
+
+    }
+
+    .sponsors-section .row .col-md-3, /* Ajusta este selector según las columnas */
+    .sponsors-section .row .col-md-4 {
+        display: flex;
+        justify-content: center; /* Centra cada ícono en su columna */
+        align-items: center;
+    }
+
+    
+     .success-stories .card {
+        width: 90%; /* Reduce el ancho para que las tarjetas se ajusten en dispositivos de menor tamaño */
+        height: auto; /* Deja que la altura se ajuste automáticamente */
+        margin: 0 auto 30px; /* Espacio inferior más reducido */
+    }
+
+    .success-stories h2, .success-stories .text-warning {
+        margin-top: 300px !important;
+        margin-bottom: 60px !important;
+        font-size: 23px;
+    }
+
+
+    .success-stories .container .col-md-3 {
+        width: 80%; /* Cada columna toma el 80% del ancho en pantallas medianas */
+        max-width: 260px;
+    }
+
+
+    .success-stories .card {
+        width: 100%;
+        max-width: 220px; /* Reduce el ancho máximo de cada tarjeta */
+        min-height: 590px; /* Altura mínima para asegurar consistencia */
+        height: 900px;
+        margin: 0 auto; /* Centra cada tarjeta */
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    }
+    
+    .success-stories .container .col-md-3 {
+        flex: 0 0 30%; /* Ajusta cada columna a un 30% del ancho del contenedor */
+        max-width: 30%; /* Limita el ancho de cada columna */
+        padding: 0 10px; /* Añade un margen de 10px entre las tarjetas */
+    }
+    
+   .story-card .card-title {
+        margin-left: 35px !important;
+   }
+
+    .story-card .card-text {
+        margin-top: 35px !important;
+    }
+
+
+
+    .stats-section .container {
+        margin-left: 0;
+    }
+ 
+    .item-section .icon-container {
+        max-width: auto;
+    }
+
+    .stats-section .container .col-md-4 {
+        margin-top: 0px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+        
+    .flip-card h5 {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        background-image: url('/assets/background-blue768.png') !important;
+        background-repeat: no-repeat;
+        background-size: cover; /* Cambia 'contain' a 'cover' */
+        background-position: center; /* Centra la imagen */
+        padding-top: 20px; /* Añade un poco de padding para dar espacio */
+        padding-bottom: 30px; /* Ajusta según necesites más o menos espacio */
+        margin-top: -10% !important;
+        margin-bottom: 0; /* Elimina el margen inferior si no es necesario */
+    }
+
+    .footer ul {
+        margin-left: 40px !important;
+        text-align: left;
+    }
+
+    .footer .container .col-md-4 {
+        margin-left: -20px;
+    }
+}
+
+
+
+/* Estilos de pantalla para 360px */
+@media (max-width: 480px) {
+  
+    body, html {
+        max-width: 480px; /* Limita el ancho máximo a 360px */
+        overflow-x: hidden; /* Evita el desbordamiento horizontal */
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    /* Hero de Home */
+    .hero-section {
+        background-image: url('/assets/h1.jpg') !important;
+        background-size: cover;
+        background-position: center;
+        height: 20vh !important;
+        width: 100%;
+        padding: 0%;
+    }
+
+    .hero-section .container {
+        margin-top: 120px; /* Ajuste del margen superior */
+    }
+
+    .hero-section .container h1 {
+        font-size: 23px !important; /* Ajusta el tamaño del título */
+        margin-top: -20px !important;
+        font-weight: bold;
+        width: 50% !important;
+        margin-left: 80px !important;
+    }
+
+    .hero-section .container p {
+        font-size: 16px; /* Tamaño de fuente ajustado */
+        font-weight: 400;
+        text-align: center;
+        padding: 0 15px; /* Aumenta el padding lateral */
+    }
+    
+    .hero-section .btn  {
+        font-size: 16px !important;
+        padding: 6px 14px !important;
+        margin-left: 0px !important;
+  
+    }
+
+    .hero-section .btn {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+    }
+
+
+    
+
+    .adoption-hero h2 {
+        font-size: 23px; /* Tamaño de fuente ajustado */
+        font-weight: 600;
+        margin-bottom: 15px;
+        margin-left: 0; /* Quita el margen izquierdo */
+        text-align: center;
+    }
+
+    .adoption-hero p {
+        font-size: 1rem; /* Tamaño de fuente ajustado */
+        margin-bottom: 15px;
+        margin-left: 0; /* Quita el margen izquierdo */
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .adoption-hero .container h2 {
+        font-size: 23px !important;
+        margin-top: -80px !important;
+        margin-left: 80px !important;
+        font-weight: bold;
+        width: 60% !important;
+    }
+
+    .adoption-hero .btn {
+        font-size: 16px !important;
+        padding: 6px 14px !important;
+        margin-left: 40px !important;
+        margin-top: 10px !important;
+    }
+
+    
+
+
+
+    /* Hero de Nosotros */
+    .medical-attention-section {
+        background-image: url('/assets/h2.jpg') !important;
+        background-size: cover !important;
+        background-position: center;
+        height: 20vh !important;
+        padding: 60px 0;
+    }
+
+    .medical-attention-section .container {
+        margin-top: 10%; /* Ajuste de margen superior */
+        text-align: center; /* Centra el texto */
+    }
+
+    .medical-attention-section .container h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        margin-left: 0; /* Quita el margen izquierdo */
+    }
+
+    .medical-attention-section .container p {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-left: 0; /* Quita el margen izquierdo */
+        padding: 0 15px; /* Agrega padding lateral */
+    }
+
+
+    /* Hero de Adopción */
+    .adoption-hero {
+        background-image: url('/assets/h3.jpg') !important;
+        background-size: cover !important;
+        background-position: center;
+        height: 20vh !important;
+        padding: 60px 0;
+        width: 100% !important; 
+    }
+
+    .adoption-hero h2 {
+        font-size: 23px; /* Tamaño de fuente ajustado */
+        font-weight: 600;
+        margin-bottom: 15px;
+        margin-left: 0; /* Quita el margen izquierdo */
+        text-align: center;
+    }
+
+    .adoption-hero p {
+        font-size: 1rem; /* Tamaño de fuente ajustado */
+        margin-bottom: 15px;
+        margin-left: 0; /* Quita el margen izquierdo */
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    
+
+    /* Success Stories Section */
+    .success-stories .card {
+        width: 372% !important;
+        max-width: 500% !important;
+        min-height: 560px !important;
+        margin: 0 auto;
+        padding: 40px;
+        margin-left: -120px;
+    }
+
+    .story-card .card-title {
+        font-size: 1.5rem;
+        margin-left: 90px !important;
+        margin-bottom: 20px !important;
+        margin-top: 20px;
+    }
+
+    .story-card .card-text {
+        padding: 20px 30px;
+        margin-top: 45px !important;
+    }
+
+    /* Contenedor general de estadísticas */
+    .stats-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px; /* Espaciado amplio entre cada stat-item */
+        padding: 20px 0;
+        margin-top: -60px !important;
+        height: 115vh;
+    }
+
+    /* Ajuste de cada item de estadísticas */
+    .stat-item {
+        margin-top: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: -20px; /* Espaciado adicional entre los items */
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* Contenedor del icono */
+    .stat-item .icon-container {
+        height: 5px; /* Tamaño del icono */
+        width: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #003F7D;
+        border-radius: 50%;
+        color: #ffffff;
+        margin-bottom: 10px; /* Separación entre el ícono y el número */
+    }
+
+    /* Número de estadísticas */
+    .stat-number {
+        background-color: #003F7D !important;
+        color: #ffffff;
+        font-size: 26px !important; /* Tamaño ajustado a 26px */
+        font-weight: bold; /* Peso de fuente bold */
+        padding: 10px 40px;
+        max-width: 200px !important; /* Ancho mínimo asegurado */
+        width: 100%; /* Asegura que se extienda en pantallas pequeñas */
+        border-radius: 8px;
+        margin-top: 60px; /* Espaciado entre el número y la descripción */
+        position: relative;
+        text-align: center; /* Alineación centrada */
+    }
+    
+    
+
+    /* Descripción debajo del número */
+    .stat-description {
+        font-size: 26px !important; /* Tamaño ajustado a 26px */
+        font-weight: bold; /* Peso de fuente bold */
+        color: #003F7D;
+        margin-top: -15px;
+        margin-bottom: 30px;
+
+    }
+
+        /* Estilos generales */
+    .success-stories {
+        padding: 90px 0;
+    }
+
+    .adoption-section {
+        position: absolute;
+    }
+
+    /* Solo mostrar una tarjeta a la vez en pantallas pequeñas */
+    .adoption-section .col-md-4 {
+        display: none;
+    }
+    .adoption-section .col-md-4.active {
+        display: block;
+    }
+
+    /* Ajustes de estilo para los botones de navegación */
+    .carousel-nav {
+        display: flex;
+        position: absolute;
+        top: 50%; /* Centra los botones verticalmente */
+        left: 0;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 15px; /* Separación lateral de los botones */
+        transform: translateY(-50%);
+        z-index: 10; /* Asegura que los botones estén al frente */
+    }
+
+    .carousel-nav button {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.7); /* Color oscuro para mejor visibilidad */
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 50%;
+        transition: background-color 0.3s;
+    }
+
+
+
+    .adoption-section {
+        background-image: url('/assets/background-blue360.png') !important;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        height: 850px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px 0;
+        margin-top: 0%;
+    }
+
+
+    .adoption-message-section {
+        background-color: #fff;
+        color: #002348;
+        width: 80%;
+        margin: 20px auto;
+        border-radius: 15px;
+        margin-top: 520px !important;
+
+    }
+
+    .adoption-message-section .adoption-title {
+        display: none;
+    }
+
+    .adoption-message-section .adoption-text {
+        margin-bottom: 1px;
+        font-size: 16px !important;
+        line-height: 1.2;
+    }
+
+    .adoption-section h2 {
+        margin-top: 70px;
+        margin-bottom: -60px;
+        color: #fff;
+        font-size: 23px !important;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .adoption-section h2 span {
+        font-size: 23px !important;
+    }
+
+
+    /* Mostrar solo una tarjeta en el carrusel */
+    .adoption-section .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Ajuste de tamaño y espaciado de la tarjeta */
+    .adoption-section .card {
+        margin: 0 auto;
+        width: 90%;
+        margin-left: 60px;
+    }
+
+    /* Ajuste de la imagen dentro de la tarjeta */
+    .adoption-section .card img {
+        width: 161%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 15px;
+        margin-top: 200%;
+        margin-left: 15px;
+    }
+
+    /* Ajuste de título y texto en la tarjeta */
+    .adoption-section .card-title {
+        font-size: 23px;
+        margin-top: -40px !important;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    /* Flip card settings */
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flip-card img {
+        height: 700px !important;
+    }
+
+    .flip-card-front h5 {
+        margin-top: -50px !important;
+    }
+
+
+    .flip-card-back {
+        background-color: #fff;
+        color: #002348;
+        transform: rotateY(180deg);
+        padding: 20px;
+        margin-top: 30%;
+        width: 161%;
+        margin-left: -55px;
+    }
+
+    .flip-card-back p {
+        color: #002348;
+        font-size: 14px;
+        margin-top: -20px;
+        margin-bottom: 10px;
+        padding: 0 15px;
+    }
+
+
+    .flip-card-back h5 {
+        padding-top: 50px;
+        color: #002348 !important;
+        font-size: 23px !important;
+        margin-bottom: 40px;
+    }
+
+    .bullets-container img {
+        margin-bottom: -120px;
+    }
+
+    .success-stories {
+        padding-bottom:  80px;
+    }
+
+    .success-stories h2, .success-stories h2 .text-warning {
+        font-size: 23px;
+        margin-top: 0px !important;
+        margin-bottom: 30px !important;
+    }
+
+
+    .success-stories .row {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    .success-stories .col-md-3 {
+        flex: 0 0 100%; /* Ocupa el 100% del ancho en vista móvil */
+        max-width: 100%;
+        display: none; /* Oculta todas las historias por defecto */
+    }
+
+    .success-stories .col-md-3.active {
+        display: block; /* Solo muestra la historia activa */
+    }
+
+    /* Estilos para los botones de navegación */
+    .carousel-nav {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    .carousel-nav button {
+        background: transparent;
+        border: none;
+        color: #fff;
+        padding: 25px;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 50%;
+        position: relative;
+    }
+
+
+    .sponsors-section {
+        background-image: url('/assets/background-gray360.png') !important;
+        background-size: cover;
+        background-position: center;
+
+        margin-top: 0;
+        height: 1050px;
+    }
+
+    .sponsors-section h2 {
+        margin-top: 40px; 
+        font-size: 23px !important;
+        margin-bottom: 50px;
+    }
+
+    .sponsors-section h2 .text-warning {
+        font-size: 23px !important;
+    }
+
+    .sponsor-description {
+        background-color: #003F7D;
+        color: #ffffff;
+        padding: 50px 15px;
+        width: 90%;
+        border-radius: 25px;
+
+    }
+
+    .sponsor-icon {
+        display: none; /* Oculta todas las imágenes de patrocinadores por defecto */
+        transition: opacity 0.5s ease-in-out;
+        border-radius: 25px !important;
+    }
+    
+    .sponsor-icon.active {
+        display: block; /* Muestra solo la imagen activa */
+        opacity: 1;
+    }
+    
+
+    .sponsors-section .sponsor-icon img {
+        width: 400px !important;
+        height: 205px;
+        min-height: 205px;
+        margin-left: -75px !important;
+   
+    }
+
+    .sponsors-section .btn-warning {
+        background-color: #F4681B;
+        color: #ffffff;
+        padding: 10px 35px;
+        font-weight: 600;
+        border-radius: 5px;
+        font-size: 14px;
+        border: none;
+        margin-bottom: -70px;
+        transition: background-color 0.3s;
+    }
+
+    .sponsors-section .btn-warning:hover {
+        background-color: #B75018;
+    }
+
+     /* Configuración específica para el footer en dispositivos móviles */
+     footer.footer.text-white.text-center.py-4 {
+        background-image: url('/assets/background360.png') !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+        color: #fff !important;
+        padding: 20px 0 !important;
+        margin-top: -10% !important;
+        background-attachment: scroll !important;        
+    }
+    
+    
+
+    /* Ajustes específicos para el contenido del footer */
+    .footer .container, .footer ul {
+        text-align: center;
+        margin-top: 60px;   
+        margin-left: -30px;
+    }
+
+    .footer .container .list-unstyled {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+        margin-left: -35px !important;
+    }
+    
+    .footer p, .footer a {
+        font-size: 12px;
+        padding: 5px;
+        color: #fff !important;
+    }
+
+    .footer .social-icons a {
+        font-size: 12px;
+        color: #002348 !important;
+    }
+
+    .footer .social-icons a img {
+        padding: 6px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer .container .row .col-md-4 {
+        margin-left: 65px;
+    }
+
+    .footer .container .row .col-md-4 img.footer-logo {
+        margin-left: -60px !important;
+    }
+
+    .footer .mt-3 {
+        width: 80%;
+        padding: 10px !important;
+        margin-left: 40px;
+        font-size: 12px;
+    }
+
+    .copyright .mt-3 {
+        font-weight: 600;
+    }
+}
