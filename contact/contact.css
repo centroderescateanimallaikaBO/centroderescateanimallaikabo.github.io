@@ -597,7 +597,7 @@ text-align: left;
 
   
     body, html {
-        max-width: 390px; /* Limita el ancho máximo a 360px */
+        max-width: 480px; /* Limita el ancho máximo a 360px */
         overflow-x: hidden; /* Evita el desbordamiento horizontal */
         margin: 0;
         padding: 0;
